@@ -1,6 +1,5 @@
 ﻿# ClinicOS — Smart Clinic Management for Vijayawada
 
-> **Smart Clinic Management for Vijayawada** · Play Store Launch April 2026  
 > Built by [CodingRippler Tech Pvt Ltd](https://codingrippler.com) · Vijayawada, Andhra Pradesh
 
 ---
