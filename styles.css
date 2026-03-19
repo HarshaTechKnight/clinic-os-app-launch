@@ -1071,8 +1071,19 @@ button {
 }
 
 .step-card {
+  background: var(--light-gray);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: var(--transition);
 	text-align: center;
-	padding: 0 1rem
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--teal)
 }
 
 .step-num {
