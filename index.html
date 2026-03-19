@@ -1,636 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>ClinicOS | Free 30-Day Pilot — Smart Clinic Management, Vijayawada</title>
-<meta name="description" content="ClinicOS is a smart clinic management app for Vijayawada clinics. Register patients in 10 seconds, manage queues, send SMS alerts, generate bills. Join the free 30-day pilot."/>
-<meta name="theme-color" content="#208F9F"/>
-<link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-
-<!-- ======================================================
-     HEADER
-====================================================== -->
-<header id="header">
-  <div class="nav-inner">
-    <a href="#hero" class="nav-logo">
-      <div class="nav-logo-icon">C</div>
-      Clinic<strong>OS</strong>
-    </a>
-
-    <nav class="nav-links">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#how-it-works">How It Works</a>
-      <a href="#pricing">Pricing</a>
-    </nav>
-
-    <div class="nav-cta">
-      <button class="btn btn-teal" data-modal="pilot">Join Pilot</button>
-    </div>
-
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#hero">Home</a>
-  <a href="#about">About</a>
-  <a href="#features">Features</a>
-  <a href="#how-it-works">How It Works</a>
-  <a href="#pricing">Pricing</a>
-  <button class="btn btn-teal" data-modal="pilot">Join Free Pilot</button>
-</div>
-
-
-<!-- ======================================================
-     HERO
-====================================================== -->
-<section id="hero">
-  <div class="hero-bg-dots"></div>
-  <div class="hero-inner">
-
-    <!-- LEFT: Content -->
-    <div class="hero-content">
-      <div class="hero-badge fade-up">
-        <span>🚀</span> Play Store Launch · April 2026 · Vijayawada
-      </div>
-      <h1 class="fade-up d1" style="color: #FEA75B;">
-        Your Clinic,
-        Now <em>Smart</em> ✨
-      </h1>
-      <p class="hero-sub fade-up d2">
-        Manage patient queues, billing, and prescriptions in 10 seconds.
-        Built for Vijayawada clinics — works offline, sends SMS alerts, no hardware required.
-      </p>
-      <div class="hero-ctas fade-up d3">
-        <button class="btn btn-green" data-modal="pilot">Join Free Pilot →</button>
-        <a href="https://drive.google.com/file/d/1soIMutKVzkzhk43__52L1KtjVqFA5f17/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-white-outline">Watch Demo (52s)</a>
-      </div>
-      <div class="hero-stats fade-up d4">
-        <div>
-          <div class="hero-stat-num">50+</div>
-          <div class="hero-stat-label">Clinics Piloting</div>
-        </div>
-        <div>
-          <div class="hero-stat-num">10,000+</div>
-          <div class="hero-stat-label">Patients / Month</div>
-        </div>
-        <div>
-          <div class="hero-stat-num">30 min</div>
-          <div class="hero-stat-label">Setup Time</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT: Android Mockup -->
-    <div class="hero-mockup-wrap fade-up d2">
-      <div class="mockup-glow"></div>
-
-      <div class="android-phone">
-        <!-- Side buttons -->
-        <div class="phone-vol-up"></div>
-        <div class="phone-vol-down"></div>
-        <div class="phone-power"></div>
-
-        <!-- Notch -->
-        <div class="phone-notch-bar">
-          <div class="notch-speaker"></div>
-          <div class="notch-camera"></div>
-        </div>
-
-        <!-- Screen -->
-        <div class="phone-screen">
-          <!-- Status Bar -->
-          <div class="phone-statusbar">
-            <span class="status-time">9:41</span>
-            <div class="status-icons">
-              <span>●●●●</span>
-              <span>WiFi</span>
-              <span class="status-battery">🔋</span>
-            </div>
-          </div>
-
-          <!-- App Header -->
-          <div class="app-header">
-            <div class="app-header-label">ClinicOS</div>
-            <div class="app-header-title">OPD Queue Management</div>
-            <div class="live-badge">
-              <div class="live-dot"></div>
-              LIVE · General OPD
-            </div>
-          </div>
-
-          <!-- Now Serving -->
-          <div class="now-serving">
-            <div class="ns-lbl">Now Serving</div>
-            <div class="ns-token">24</div>
-            <div class="ns-name">Ravi Kumar Reddy</div>
-            <div class="ns-dept">General Consultation · In Progress</div>
-          </div>
-
-          <!-- Queue -->
-          <div class="queue-section">
-            <div class="queue-section-hdr">Waiting — 6 patients</div>
-            <div class="q-row">
-              <div class="q-n">25</div>
-              <div class="q-info">
-                <div class="q-nm">Padma Lakshmi</div>
-                <div class="q-t">~5 min wait</div>
-              </div>
-              <span class="q-bdg next">Next</span>
-            </div>
-            <div class="q-row">
-              <div class="q-n">26</div>
-              <div class="q-info">
-                <div class="q-nm">Suresh Naidu</div>
-                <div class="q-t">~12 min wait</div>
-              </div>
-              <span class="q-bdg wait">Wait</span>
-            </div>
-            <div class="q-row">
-              <div class="q-n">27</div>
-              <div class="q-info">
-                <div class="q-nm">Anitha Devi</div>
-                <div class="q-t">~20 min wait</div>
-              </div>
-              <span class="q-bdg wait">Wait</span>
-            </div>
-          </div>
-
-          <!-- Stats -->
-          <div class="phone-stats-row">
-            <div class="ph-stat">
-              <div class="ph-stat-n">31</div>
-              <div class="ph-stat-l">Today</div>
-            </div>
-            <div class="ph-stat">
-              <div class="ph-stat-n">6</div>
-              <div class="ph-stat-l">Waiting</div>
-            </div>
-            <div class="ph-stat">
-              <div class="ph-stat-n" style="color:var(--green)">₹6.2K</div>
-              <div class="ph-stat-l">Revenue</div>
-            </div>
-          </div>
-
-          <!-- Home Bar -->
-          <div class="phone-home"></div>
-        </div><!-- /screen -->
-      </div><!-- /android-phone -->
-
-      <!-- Floating badges -->
-      <div class="sms-badge-float">
-        <div class="sms-badge-float-title">📲 SMS Sent</div>
-        <div class="sms-badge-float-text">Token #25 — మీ వంతు దగ్గరపడింది! ~5 min</div>
-      </div>
-      <div class="offline-badge-float">📶 Offline Mode<br><span>Auto-syncing ✓</span></div>
-
-    </div><!-- /hero-mockup-wrap -->
-  </div><!-- /hero-inner -->
-</section>
-
-
-<!-- ======================================================
-     ABOUT
-====================================================== -->
-<section id="about">
-  <div class="about-inner">
-
-    <div class="about-body fade-up">
-      <div class="about-label">About ClinicOS</div>
-      <h2 class="about-title">Built for Vijayawada Clinics</h2>
-      <p>ClinicOS is a smart clinic management system designed specifically for small clinics, nursing homes, and individual practitioners across Andhra Pradesh.</p>
-      <p>We reduce patient registration time from 5 minutes to just 10 seconds. Our automated queue management sends SMS alerts to patients in Telugu and English — so your waiting room stays calm and your staff stays focused.</p>
-      <p>Built by CodingRippler Tech, a Vijayawada startup that visited 50+ clinics before writing a single line of code. We know your problems because we've seen them firsthand.</p>
-      <p>Join our free 30-day pilot — no commitment, no credit card, and our team comes to your clinic for setup and training.</p>
-      <div class="about-benefits">
-        <div class="about-benefit"><span class="ck">✅</span> 100% Free for 30 days</div>
-        <div class="about-benefit"><span class="ck">✅</span> Free Staff Training at your clinic</div>
-        <div class="about-benefit"><span class="ck">✅</span> No commitment — cancel anytime</div>
-        <div class="about-benefit"><span class="ck">✅</span> Official Play Store App · April 2026</div>
-      </div>
-    </div>
-
-    <div class="about-image-wrap fade-up d2">
-      <div class="about-img-box">
-        <img src="images/about-image.png" alt="">
-      </div>
-      <div class="pilot-badge">🎉 5 clinics already piloting!</div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ======================================================
-     FEATURES
-====================================================== -->
-<section id="features">
-  <div class="features-inner">
-    <div class="text-center fade-up">
-      <div class="section-label">Features</div>
-      <h2 class="section-title">Everything Your Clinic <em>Needs</em></h2>
-      <p class="section-sub">8 powerful features that turn a chaotic clinic into a smooth, digital practice — all in one Android app.</p>
-    </div>
-
-    <div class="features-grid">
-
-      <div class="feature-card fade-up d1">
-        <div class="feat-icon">⚡</div>
-        <div class="feat-title">10-Second Registration</div>
-        <div class="feat-desc">Enter phone number, retrieve patient history instantly, assign token — done. Fastest patient registration in India.</div>
-        <span class="feat-tag">Fastest in India</span>
-      </div>
-
-      <div class="feature-card fade-up d2">
-        <div class="feat-icon">🎫</div>
-        <div class="feat-title">Token Queue Management</div>
-        <div class="feat-desc">Automatic token assignment with live "Now Serving" display. Staff manage flow with one tap — pause, skip, or call next.</div>
-        <span class="feat-tag">Live Display</span>
-      </div>
-
-      <div class="feature-card fade-up d3">
-        <div class="feat-icon">📱</div>
-        <div class="feat-title">SMS / WhatsApp Alerts</div>
-        <div class="feat-desc">Auto-notify patients in Telugu or English: token number, estimated wait, and when their turn arrives. No staff action needed.</div>
-        <span class="feat-tag">Telugu First</span>
-      </div>
-
-      <div class="feature-card fade-up d1">
-        <div class="feat-icon">💰</div>
-        <div class="feat-title">Instant Billing</div>
-        <div class="feat-desc">One-tap GST-compliant invoice generation. UPI QR code integration. Track daily collections and unpaid bills effortlessly.</div>
-        <span class="feat-tag">UPI QR Ready</span>
-      </div>
-
-      <div class="feature-card fade-up d2">
-        <div class="feat-icon">📋</div>
-        <div class="feat-title">Digital Prescriptions</div>
-        <div class="feat-desc">Templates for common complaints. Store and retrieve prescriptions instantly. No more lost paper prescriptions, ever.</div>
-        <span class="feat-tag">No Lost Papers</span>
-      </div>
-
-      <div class="feature-card fade-up d3">
-        <div class="feat-icon">📊</div>
-        <div class="feat-title">Analytics Dashboard</div>
-        <div class="feat-desc">Track patients per day, revenue trends, peak hours, and common complaints. Make smarter clinic decisions with real data.</div>
-        <span class="feat-tag">Real Insights</span>
-      </div>
-
-      <div class="feature-card fade-up d1">
-        <div class="feat-icon">🌐</div>
-        <div class="feat-title">Offline Mode</div>
-        <div class="feat-desc">Works completely without internet. All data saves locally on your Android device and syncs automatically when connection is restored.</div>
-        <span class="feat-tag">Always Works</span>
-      </div>
-
-      <div class="feature-card fade-up d2">
-        <div class="feat-icon">🔒</div>
-        <div class="feat-title">Secure &amp; DPDPA Ready</div>
-        <div class="feat-desc">256-bit SSL encryption. Patient data handled per India's DPDPA framework. Role-based access for doctors and assistants.</div>
-        <span class="feat-tag">Data Protected</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ======================================================
-     HOW IT WORKS
-====================================================== -->
-<section id="how-it-works">
-  <div class="how-inner">
-    <div class="text-center fade-up">
-      <div class="section-label">How It Works</div>
-      <h2 class="section-title">From Registration to <em>Consultation</em></h2>
-      <p class="section-sub">4 simple steps that replace a day's worth of paperwork — running on your existing Android phone.</p>
-    </div>
-
-    <div class="steps-grid">
-
-      <div class="step-card fade-up d1">
-        <div class="step-num">1</div>
-        <div class="step-icon">📱</div>
-        <h3 class="step-title">Register Patient</h3>
-        <p class="step-desc">Receptionist enters the patient's phone number. Returning patients load instantly. New patients registered in under 10 seconds.</p>
-        <span class="step-tag">⚡ Under 10 seconds</span>
-      </div>
-
-      <div class="step-card fade-up d2">
-        <div class="step-num">2</div>
-        <div class="step-icon">🎫</div>
-        <h3 class="step-title">Get Token</h3>
-        <p class="step-desc">Automatic token generated and displayed on the clinic screen. Patient receives SMS with token number and estimated wait time.</p>
-        <span class="step-tag">📲 Instant SMS in Telugu</span>
-      </div>
-
-      <div class="step-card fade-up d3">
-        <div class="step-num">3</div>
-        <div class="step-icon">💬</div>
-        <h3 class="step-title">SMS Alert</h3>
-        <p class="step-desc">Patient gets WhatsApp/SMS: "Your turn in 5 mins!" They can wait outside, have tea, rest — and return exactly when needed.</p>
-        <span class="step-tag">🔔 Zero missed turns</span>
-      </div>
-
-      <div class="step-card fade-up d4">
-        <div class="step-num">4</div>
-        <div class="step-icon">🩺</div>
-        <h3 class="step-title">Consult &amp; Bill</h3>
-        <p class="step-desc">Doctor consults with full patient history visible. Receptionist generates GST bill in one tap. Queue auto-advances to next token.</p>
-        <span class="step-tag">✅ Zero paper, zero confusion</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ======================================================
-     PRICING
-====================================================== -->
-<section id="pricing">
-  <div class="pricing-inner">
-    <div class="text-center fade-up">
-      <div class="section-label">Pricing</div>
-      <h2 class="section-title">Simple, <em>Honest</em> Pricing</h2>
-      <p class="section-sub">Start free for 30 days. No credit card. Cancel anytime. Your first 30 days are completely free — no strings attached.</p>
-    </div>
-
-    <div class="pricing-grid">
-
-      <!-- Pilot -->
-      <div class="pricing-card featured fade-up d1">
-        <div class="feat-ribbon">🎁 Start Here — FREE</div>
-        <div class="p-badge">Pilot</div>
-        <div class="p-name">Free Pilot</div>
-        <div class="p-price">FREE</div>
-        <div class="p-dur">30 Days — Full Access</div>
-        <div class="p-divider"></div>
-        <div class="p-features">
-          <div class="p-feat"><span class="ck">✓</span> All features included</div>
-          <div class="p-feat"><span class="ck">✓</span> Unlimited patients</div>
-          <div class="p-feat"><span class="ck">✓</span> Free staff training</div>
-          <div class="p-feat"><span class="ck">✓</span> Setup at your clinic</div>
-          <div class="p-feat"><span class="ck">✓</span> Email &amp; WhatsApp support</div>
-          <div class="p-feat"><span class="ck">✓</span> No credit card required</div>
-        </div>
-        <button class="btn btn-teal" data-modal="pilot">Join Pilot</button>
-      </div>
-
-      <!-- Pro -->
-      <div class="pricing-card fade-up d2">
-        <div class="p-badge">Pro</div>
-        <div class="p-name">Pro</div>
-        <div class="p-price"><sup>₹</sup>999<small>/mo</small></div>
-        <div class="p-dur">Per Month — after pilot</div>
-        <div class="p-divider"></div>
-        <div class="p-features">
-          <div class="p-feat"><span class="ck">✓</span> All Pilot features</div>
-          <div class="p-feat"><span class="ck">✓</span> Unlimited patients</div>
-          <div class="p-feat"><span class="ck">✓</span> UPI QR payment integration</div>
-          <div class="p-feat"><span class="ck">✓</span> Priority WhatsApp support</div>
-          <div class="p-feat"><span class="ck">✓</span> Monthly analytics reports</div>
-          <div class="p-feat"><span class="ck">✓</span> Telugu UI support</div>
-        </div>
-        <button class="btn btn-teal-outline" onclick="window.open('https://wa.me/917330937354?text=I want to subscribe to ClinicOS Pro ₹999/month')">Subscribe Now</button>
-      </div>
-
-      <!-- Multi-Clinic -->
-      <div class="pricing-card fade-up d3">
-        <div class="p-badge">Multi-Clinic</div>
-        <div class="p-name">Multi-Clinic</div>
-        <div class="p-price"><sup>₹</sup>2,499<small>/mo</small></div>
-        <div class="p-dur">Per Month — all branches</div>
-        <div class="p-divider"></div>
-        <div class="p-features">
-          <div class="p-feat"><span class="ck">✓</span> All Pro features</div>
-          <div class="p-feat"><span class="ck">✓</span> Up to 5 clinic branches</div>
-          <div class="p-feat"><span class="ck">✓</span> Advanced analytics &amp; reports</div>
-          <div class="p-feat"><span class="ck">✓</span> Dedicated account manager</div>
-          <div class="p-feat"><span class="ck">✓</span> API access</div>
-          <div class="p-feat"><span class="ck">✓</span> Custom branding</div>
-        </div>
-        <button class="btn btn-teal-outline" data-modal="pilot">Contact Sales</button>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ======================================================
-     TESTIMONIALS
-====================================================== -->
-<section id="testimonials">
-  <div class="testi-inner">
-    <div class="text-center fade-up">
-      <div class="section-label" style="color:rgba(255,255,255,0.7)">Testimonials</div>
-      <h2 class="section-title">Trusted by <em style="color:#4ade80">Vijayawada</em> Clinics</h2>
-      <p class="section-sub">Real feedback from doctors who are already using ClinicOS in their practice.</p>
-    </div>
-
-    <div class="testi-grid">
-
-      <div class="testi-card fade-up d1">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">ClinicOS reduced our registration time from 5 minutes to just 30 seconds! Patient satisfaction improved immediately. Our waiting room is finally calm.</p>
-        <div class="testi-author">
-          <div class="testi-av">R</div>
-          <div>
-            <div class="testi-name">Dr. Ramakrishnan</div>
-            <div class="testi-clinic">BEST Hospital, Vijayawada</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testi-card fade-up d2">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">The offline mode is a lifesaver. We never lose patient data even when internet goes down. And the Telugu SMS feature — patients love it.</p>
-        <div class="testi-author">
-          <div class="testi-av" style="background:rgba(255,255,255,0.25)">A</div>
-          <div>
-            <div class="testi-name">Dr. Anjali Sharma</div>
-            <div class="testi-clinic">Skin Care Clinic, Labbipet</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testi-card fade-up d3">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">Best ₹999 I ever spent. Saved us 2 hours every day on manual paperwork. The billing feature alone pays for itself in a week. Highly recommend!</p>
-        <div class="testi-author">
-          <div class="testi-av" style="background:rgba(255,255,255,0.22)">S</div>
-          <div>
-            <div class="testi-name">Dr. Suresh Rao</div>
-            <div class="testi-clinic">Multi-specialty Clinic, Benz Circle</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ======================================================
-     CTA SECTION
-====================================================== -->
-<section id="cta-section">
-  <div class="cta-dots"></div>
-  <div class="cta-inner fade-up">
-    <h2>Ready to Go Digital? 🚀</h2>
-    <p>Join Vijayawada's first 100 clinics using ClinicOS for free!<br>Our team will visit your clinic, set everything up, and train your staff — at zero cost.</p>
-    <button class="btn btn-white-outline" data-modal="pilot" style="font-size:1.05rem;padding:1rem 2.2rem">Join Free Pilot Now →</button>
-    <div class="cta-trust">
-      <span>✅ 30 days free</span>
-      <span>✅ No credit card</span>
-      <span>✅ Free training</span>
-      <span>✅ Telugu support</span>
-    </div>
-  </div>
-</section>
-
-
-<!-- ======================================================
-     FOOTER
-====================================================== -->
-<footer id="footer">
-  <div class="footer-inner">
-    <div class="footer-grid">
-
-      <!-- Brand -->
-      <div>
-        <div class="footer-logo">
-          <div class="footer-logo-icon">C</div>
-          <span class="footer-logo-text">ClinicOS</span>
-        </div>
-        <p class="footer-desc">Smart clinic management for India's small clinics and nursing homes. Built with ❤️ in Vijayawada, Andhra Pradesh.</p>
-        <p style="font-size:0.8rem;color:#666;margin-top:0.4rem">Play Store Launch · April 2026</p>
-      </div>
-
-      <!-- Product -->
-      <div>
-        <div class="footer-col-title">Product</div>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="https://lively-crostata-40ac4a.netlify.app/" target="_blank">Live Demo</a></li>
-        </ul>
-      </div>
-
-      <!-- Company -->
-      <div>
-        <div class="footer-col-title">Company</div>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <div class="footer-col-title">Contact</div>
-        <div class="footer-contact-row">📧 <a href="mailto:sriharsha100260@gmail.com">sriharsha100260@gmail.com</a></div>
-        <div class="footer-contact-row">📱 <a href="https://wa.me/917330937354">+91-7330937354</a></div>
-        <div class="footer-contact-row">📍 Vijayawada, Andhra Pradesh</div>
-        <div style="margin-top:1rem">
-          <a href="https://wa.me/917330937354?text=Hi, I want to know more about ClinicOS" target="_blank" class="btn btn-teal" style="font-size:0.85rem;padding:0.6rem 1.2rem">💬 WhatsApp Us</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <span>© 2026 Coding Rippler Tech Private Limited. All rights reserved.</span>
-      <div class="footer-legal">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Refunds</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-<!-- ======================================================
-     MODAL — PILOT REGISTRATION
-====================================================== -->
-<div class="modal-overlay" id="pilotModal">
-  <div class="modal-box">
-    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-
-    <!-- Form -->
-    <div id="pilotForm">
-      <div class="modal-badge">🏥 Free 30-Day Pilot</div>
-      <h2 class="modal-title">Join the ClinicOS Pilot</h2>
-      <p class="modal-sub">Fill in your details and Harsha will contact you within 24 hours to schedule setup at your clinic. No commitment, no credit card.</p>
-
-      <form onsubmit="return false;">
-        <div class="form-group">
-          <label class="form-label" for="clinicName">Clinic Name <span class="req">*</span></label>
-          <input class="form-input" type="text" id="clinicName" placeholder="e.g. Sri Sai Clinic" required autocomplete="organization"/>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="doctorName">Doctor / Owner Name <span class="req">*</span></label>
-          <input class="form-input" type="text" id="doctorName" placeholder="e.g. Dr. Ramakrishna Rao" required autocomplete="name"/>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="whatsappNum">WhatsApp Number <span class="req">*</span></label>
-          <div class="phone-wrap">
-            <span class="phone-pre">🇮🇳 +91</span>
-            <input class="form-input" type="tel" id="whatsappNum" placeholder="98765 43210" maxlength="10" pattern="[6-9][0-9]{9}" required/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="emailAddr">Email Address <span style="color:#aaa;font-weight:400">(optional)</span></label>
-          <input class="form-input" type="email" id="emailAddr" placeholder="doctor@clinic.com" autocomplete="email"/>
-        </div>
-
-        <button class="form-submit" type="submit">Submit &amp; Join Pilot →</button>
-
-        <p class="modal-alt">
-          Want to fill the full form?
-          <a href="https://forms.gle/atao9vwM8vuDBiiE9" target="_blank" rel="noopener">Open Detailed Registration →</a>
-        </p>
-      </form>
-    </div>
-
-    <!-- Success State -->
-    <div id="modalSuccess" class="modal-success">
-      <div class="success-icon">🎉</div>
-      <h3 class="success-title">You're In the Pilot!</h3>
-      <p class="success-text">
-        Thank you for joining the ClinicOS Pilot!<br><br>
-        Harsha will contact you on WhatsApp within <strong>24 hours</strong> to schedule your free clinic setup.<br><br>
-        <strong>WhatsApp:</strong> <a href="https://wa.me/917330937354" style="color:var(--teal)">+91-7330937354</a><br><br>
-        <a href="https://drive.google.com/file/d/1soIMutKVzkzhk43__52L1KtjVqFA5f17/view?usp=drive_link" target="_blank" style="color:var(--teal);font-weight:700">📱 Watch the 52-second demo →</a>
-      </p>
-    </div>
-
-  </div>
-</div>
-
-<!-- Toast -->
-<div class="toast" id="toast"></div>
-
-<!-- WhatsApp FAB -->
-<a class="wa-fab" href="https://wa.me/917330937354?text=Hi, I want to know more about ClinicOS pilot" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-</a>
-
-<script src="script.js" defer></script>
-</body>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>ClinicOS | Free 30-Day Pilot — Smart Clinic Management, Vijayawada</title>
+		<meta name="description" content="ClinicOS is a smart clinic management app for Vijayawada clinics. Register patients in 10 seconds, manage queues, send SMS alerts, generate bills. Join the free 30-day pilot."/>
+		<meta name="theme-color" content="#208F9F"/>
+		<link rel="stylesheet" href="styles.css"/>
+	</head>
+	<body>
+		<!-- ======================================================
+			HEADER
+			====================================================== -->
+		<header id="header">
+			<div class="nav-inner">
+				<a href="#hero" class="nav-logo">
+					<div class="nav-logo-icon">C</div>
+					Clinic<strong>OS</strong>
+				</a>
+				<nav class="nav-links">
+					<a href="#hero">Home</a>
+					<a href="#about">About</a>
+					<a href="#features">Features</a>
+					<a href="#how-it-works">How It Works</a>
+					<a href="#pricing">Pricing</a>
+          <a href="#cta-section">Contact</a>
+				</nav>
+				<div class="nav-cta">
+					<button class="btn btn-teal" data-modal="pilot">Join Pilot</button>
+				</div>
+				<button class="hamburger" aria-label="Menu">
+				<span></span><span></span><span></span>
+				</button>
+			</div>
+		</header>
+		<!-- Mobile Menu -->
+		<div class="mobile-menu" id="mobileMenu">
+			<a href="#hero">Home</a>
+			<a href="#about">About</a>
+			<a href="#features">Features</a>
+			<a href="#how-it-works">How It Works</a>
+			<a href="#pricing">Pricing</a>
+      <a href="#cta-section">Contact</a>
+			<button class="btn btn-teal" data-modal="pilot">Join Free Pilot</button>
+		</div>
+		<!-- ======================================================
+			HERO
+			====================================================== -->
+		<section id="hero">
+			<div class="hero-bg-dots"></div>
+			<div class="hero-inner">
+				<!-- LEFT: Content -->
+				<div class="hero-content">
+					<div class="hero-badge fade-up">
+						<span>🚀</span> Play Store Launch · April 2026 · Vijayawada
+					</div>
+					<h1 class="fade-up d1" style="color: #FEA75B;">
+						Your Clinic,
+						Now <em>Smart</em> ✨
+					</h1>
+					<p class="hero-sub fade-up d2">
+						Manage patient queues, billing, and prescriptions in 10 seconds.
+						Built for Vijayawada clinics — works offline, sends SMS alerts, no hardware required.
+					</p>
+					<div class="hero-ctas fade-up d3">
+						<button class="btn btn-green" data-modal="pilot">Join Free Pilot →</button>
+						<a href="https://drive.google.com/file/d/1soIMutKVzkzhk43__52L1KtjVqFA5f17/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-white-outline">Watch Demo (52s)</a>
+					</div>
+					<div class="hero-stats fade-up d4">
+						<div>
+							<div class="hero-stat-num">50+</div>
+							<div class="hero-stat-label">Clinics Piloting</div>
+						</div>
+						<div>
+							<div class="hero-stat-num">10,000+</div>
+							<div class="hero-stat-label">Patients / Month</div>
+						</div>
+						<div>
+							<div class="hero-stat-num">30 min</div>
+							<div class="hero-stat-label">Setup Time</div>
+						</div>
+					</div>
+				</div>
+				<!-- RIGHT: Android Mockup -->
+				<div class="hero-mockup-wrap fade-up d2">
+					<div class="mockup-glow"></div>
+					<div class="android-phone">
+						<!-- Side buttons -->
+						<div class="phone-vol-up"></div>
+						<div class="phone-vol-down"></div>
+						<div class="phone-power"></div>
+						<!-- Notch -->
+						<div class="phone-notch-bar">
+							<div class="notch-speaker"></div>
+							<div class="notch-camera"></div>
+						</div>
+						<!-- Screen -->
+						<div class="phone-screen">
+							<!-- Status Bar -->
+							<div class="phone-statusbar">
+								<span class="status-time">9:41</span>
+								<div class="status-icons">
+									<span>●●●●</span>
+									<span>WiFi</span>
+									<span class="status-battery">🔋</span>
+								</div>
+							</div>
+							<!-- App Header -->
+							<div class="app-header">
+								<div class="app-header-label">ClinicOS</div>
+								<div class="app-header-title">OPD Queue Management</div>
+								<div class="live-badge">
+									<div class="live-dot"></div>
+									LIVE · General OPD
+								</div>
+							</div>
+							<!-- Now Serving -->
+							<div class="now-serving">
+								<div class="ns-lbl">Now Serving</div>
+								<div class="ns-token">24</div>
+								<div class="ns-name">Ravi Kumar Reddy</div>
+								<div class="ns-dept">General Consultation · In Progress</div>
+							</div>
+							<!-- Queue -->
+							<div class="queue-section">
+								<div class="queue-section-hdr">Waiting — 6 patients</div>
+								<div class="q-row">
+									<div class="q-n">25</div>
+									<div class="q-info">
+										<div class="q-nm">Padma Lakshmi</div>
+										<div class="q-t">~5 min wait</div>
+									</div>
+									<span class="q-bdg next">Next</span>
+								</div>
+								<div class="q-row">
+									<div class="q-n">26</div>
+									<div class="q-info">
+										<div class="q-nm">Suresh Naidu</div>
+										<div class="q-t">~12 min wait</div>
+									</div>
+									<span class="q-bdg wait">Wait</span>
+								</div>
+								<div class="q-row">
+									<div class="q-n">27</div>
+									<div class="q-info">
+										<div class="q-nm">Anitha Devi</div>
+										<div class="q-t">~20 min wait</div>
+									</div>
+									<span class="q-bdg wait">Wait</span>
+								</div>
+							</div>
+							<!-- Stats -->
+							<div class="phone-stats-row">
+								<div class="ph-stat">
+									<div class="ph-stat-n">31</div>
+									<div class="ph-stat-l">Today</div>
+								</div>
+								<div class="ph-stat">
+									<div class="ph-stat-n">6</div>
+									<div class="ph-stat-l">Waiting</div>
+								</div>
+								<div class="ph-stat">
+									<div class="ph-stat-n" style="color:var(--green)">₹6.2K</div>
+									<div class="ph-stat-l">Revenue</div>
+								</div>
+							</div>
+							<!-- Home Bar -->
+							<div class="phone-home"></div>
+						</div>
+						<!-- /screen -->
+					</div>
+					<!-- /android-phone -->
+					<!-- Floating badges -->
+					<div class="sms-badge-float">
+						<div class="sms-badge-float-title">📲 SMS Sent</div>
+						<div class="sms-badge-float-text">Token #25 — మీ వంతు దగ్గరపడింది! ~5 min</div>
+					</div>
+					<div class="offline-badge-float">📶 Offline Mode<br><span>Auto-syncing ✓</span></div>
+				</div>
+				<!-- /hero-mockup-wrap -->
+			</div>
+			<!-- /hero-inner -->
+		</section>
+		<!-- ======================================================
+			ABOUT
+			====================================================== -->
+		<section id="about">
+			<div class="about-inner">
+				<div class="about-body fade-up">
+					<div class="about-label">About ClinicOS</div>
+					<h2 class="about-title">Built for Vijayawada Clinics</h2>
+					<p>ClinicOS is a smart clinic management system designed specifically for small clinics, nursing homes, and individual practitioners across Andhra Pradesh.</p>
+					<p>We reduce patient registration time from 5 minutes to just 10 seconds. Our automated queue management sends SMS alerts to patients in Telugu and English — so your waiting room stays calm and your staff stays focused.</p>
+					<p>Built by CodingRippler Tech, a Vijayawada startup that visited 50+ clinics before writing a single line of code. We know your problems because we've seen them firsthand.</p>
+					<p>Join our free 30-day pilot — no commitment, no credit card, and our team comes to your clinic for setup and training.</p>
+					<div class="about-benefits">
+						<div class="about-benefit"><span class="ck">✅</span> 100% Free for 30 days</div>
+						<div class="about-benefit"><span class="ck">✅</span> Free Staff Training at your clinic</div>
+						<div class="about-benefit"><span class="ck">✅</span> No commitment — cancel anytime</div>
+						<div class="about-benefit"><span class="ck">✅</span> Official Play Store App · April 2026</div>
+					</div>
+				</div>
+				<div class="about-image-wrap fade-up d2">
+					<div class="about-img-box">
+						<img src="images/about-image.png" alt="">
+					</div>
+					<div class="pilot-badge">🎉 5 clinics already piloting!</div>
+				</div>
+			</div>
+		</section>
+		<!-- ======================================================
+			FEATURES
+			====================================================== -->
+		<section id="features">
+			<div class="features-inner">
+				<div class="text-center fade-up">
+					<div class="section-label">Features</div>
+					<h2 class="section-title">Everything Your Clinic <em>Needs</em></h2>
+					<p class="section-sub">8 powerful features that turn a chaotic clinic into a smooth, digital practice — all in one Android app.</p>
+				</div>
+				<div class="features-grid">
+					<div class="feature-card fade-up d1">
+						<div class="feat-icon">⚡</div>
+						<div class="feat-title">10-Second Registration</div>
+						<div class="feat-desc">Enter phone number, retrieve patient history instantly, assign token — done. Fastest patient registration in India.</div>
+						<span class="feat-tag">Fastest in India</span>
+					</div>
+					<div class="feature-card fade-up d2">
+						<div class="feat-icon">🎫</div>
+						<div class="feat-title">Token Queue Management</div>
+						<div class="feat-desc">Automatic token assignment with live "Now Serving" display. Staff manage flow with one tap — pause, skip, or call next.</div>
+						<span class="feat-tag">Live Display</span>
+					</div>
+					<div class="feature-card fade-up d3">
+						<div class="feat-icon">📱</div>
+						<div class="feat-title">SMS / WhatsApp Alerts</div>
+						<div class="feat-desc">Auto-notify patients in Telugu or English: token number, estimated wait, and when their turn arrives. No staff action needed.</div>
+						<span class="feat-tag">Telugu First</span>
+					</div>
+					<div class="feature-card fade-up d1">
+						<div class="feat-icon">💰</div>
+						<div class="feat-title">Instant Billing</div>
+						<div class="feat-desc">One-tap GST-compliant invoice generation. UPI QR code integration. Track daily collections and unpaid bills effortlessly.</div>
+						<span class="feat-tag">UPI QR Ready</span>
+					</div>
+					<div class="feature-card fade-up d2">
+						<div class="feat-icon">📋</div>
+						<div class="feat-title">Digital Prescriptions</div>
+						<div class="feat-desc">Templates for common complaints. Store and retrieve prescriptions instantly. No more lost paper prescriptions, ever.</div>
+						<span class="feat-tag">No Lost Papers</span>
+					</div>
+					<div class="feature-card fade-up d3">
+						<div class="feat-icon">📊</div>
+						<div class="feat-title">Analytics Dashboard</div>
+						<div class="feat-desc">Track patients per day, revenue trends, peak hours, and common complaints. Make smarter clinic decisions with real data.</div>
+						<span class="feat-tag">Real Insights</span>
+					</div>
+					<div class="feature-card fade-up d1">
+						<div class="feat-icon">🌐</div>
+						<div class="feat-title">Offline Mode</div>
+						<div class="feat-desc">Works completely without internet. All data saves locally on your Android device and syncs automatically when connection is restored.</div>
+						<span class="feat-tag">Always Works</span>
+					</div>
+					<div class="feature-card fade-up d2">
+						<div class="feat-icon">🔒</div>
+						<div class="feat-title">Secure &amp; DPDPA Ready</div>
+						<div class="feat-desc">256-bit SSL encryption. Patient data handled per India's DPDPA framework. Role-based access for doctors and assistants.</div>
+						<span class="feat-tag">Data Protected</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ======================================================
+			HOW IT WORKS
+			====================================================== -->
+		<section id="how-it-works">
+			<div class="how-inner">
+				<div class="text-center fade-up">
+					<div class="section-label">How It Works</div>
+					<h2 class="section-title">From Registration to <em>Consultation</em></h2>
+					<p class="section-sub">4 simple steps that replace a day's worth of paperwork — running on your existing Android phone.</p>
+				</div>
+				<div class="steps-grid">
+					<div class="step-card fade-up d1">
+						<div class="step-num">1</div>
+						<div class="step-icon">📱</div>
+						<h3 class="step-title">Register Patient</h3>
+						<p class="step-desc">Receptionist enters the patient's phone number. Returning patients load instantly. New patients registered in under 10 seconds.</p>
+						<span class="step-tag">⚡ Under 10 seconds</span>
+					</div>
+					<div class="step-card fade-up d2">
+						<div class="step-num">2</div>
+						<div class="step-icon">🎫</div>
+						<h3 class="step-title">Get Token</h3>
+						<p class="step-desc">Automatic token generated and displayed on the clinic screen. Patient receives SMS with token number and estimated wait time.</p>
+						<span class="step-tag">📲 Instant SMS in Telugu</span>
+					</div>
+					<div class="step-card fade-up d3">
+						<div class="step-num">3</div>
+						<div class="step-icon">💬</div>
+						<h3 class="step-title">SMS Alert</h3>
+						<p class="step-desc">Patient gets WhatsApp/SMS: "Your turn in 5 mins!" They can wait outside, have tea, rest — and return exactly when needed.</p>
+						<span class="step-tag">🔔 Zero missed turns</span>
+					</div>
+					<div class="step-card fade-up d4">
+						<div class="step-num">4</div>
+						<div class="step-icon">🩺</div>
+						<h3 class="step-title">Consult &amp; Bill</h3>
+						<p class="step-desc">Doctor consults with full patient history visible. Receptionist generates GST bill in one tap. Queue auto-advances to next token.</p>
+						<span class="step-tag">✅ Zero paper, zero confusion</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ======================================================
+			PRICING
+			====================================================== -->
+		<section id="pricing">
+			<div class="pricing-inner">
+				<div class="text-center fade-up">
+					<div class="section-label">Pricing</div>
+					<h2 class="section-title">Simple, <em>Honest</em> Pricing</h2>
+					<p class="section-sub">Start free for 30 days. No credit card. Cancel anytime. Your first 30 days are completely free — no strings attached.</p>
+				</div>
+				<div class="pricing-grid">
+					<!-- Pilot -->
+					<div class="pricing-card featured fade-up d1">
+						<div class="feat-ribbon">🎁 Start Here — FREE</div>
+						<div class="p-badge">Pilot</div>
+						<div class="p-name">Free Pilot</div>
+						<div class="p-price">FREE</div>
+						<div class="p-dur">30 Days — Full Access</div>
+						<div class="p-divider"></div>
+						<div class="p-features">
+							<div class="p-feat"><span class="ck">✓</span> All features included</div>
+							<div class="p-feat"><span class="ck">✓</span> Unlimited patients</div>
+							<div class="p-feat"><span class="ck">✓</span> Free staff training</div>
+							<div class="p-feat"><span class="ck">✓</span> Setup at your clinic</div>
+							<div class="p-feat"><span class="ck">✓</span> Email &amp; WhatsApp support</div>
+							<div class="p-feat"><span class="ck">✓</span> No credit card required</div>
+						</div>
+						<button class="btn btn-teal" data-modal="pilot">Join Pilot</button>
+					</div>
+					<!-- Pro -->
+					<div class="pricing-card fade-up d2">
+						<div class="p-badge">Pro</div>
+						<div class="p-name">Pro</div>
+						<div class="p-price"><sup>₹</sup>999<small>/mo</small></div>
+						<div class="p-dur">Per Month — after pilot</div>
+						<div class="p-divider"></div>
+						<div class="p-features">
+							<div class="p-feat"><span class="ck">✓</span> All Pilot features</div>
+							<div class="p-feat"><span class="ck">✓</span> Unlimited patients</div>
+							<div class="p-feat"><span class="ck">✓</span> UPI QR payment integration</div>
+							<div class="p-feat"><span class="ck">✓</span> Priority WhatsApp support</div>
+							<div class="p-feat"><span class="ck">✓</span> Monthly analytics reports</div>
+							<div class="p-feat"><span class="ck">✓</span> Telugu UI support</div>
+						</div>
+						<button class="btn btn-teal-outline" onclick="window.open('https://wa.me/917330937354?text=I want to subscribe to ClinicOS Pro ₹999/month')">Subscribe Now</button>
+					</div>
+					<!-- Multi-Clinic -->
+					<div class="pricing-card fade-up d3">
+						<div class="p-badge">Multi-Clinic</div>
+						<div class="p-name">Multi-Clinic</div>
+						<div class="p-price"><sup>₹</sup>2,499<small>/mo</small></div>
+						<div class="p-dur">Per Month — all branches</div>
+						<div class="p-divider"></div>
+						<div class="p-features">
+							<div class="p-feat"><span class="ck">✓</span> All Pro features</div>
+							<div class="p-feat"><span class="ck">✓</span> Up to 5 clinic branches</div>
+							<div class="p-feat"><span class="ck">✓</span> Advanced analytics &amp; reports</div>
+							<div class="p-feat"><span class="ck">✓</span> Dedicated account manager</div>
+							<div class="p-feat"><span class="ck">✓</span> API access</div>
+							<div class="p-feat"><span class="ck">✓</span> Custom branding</div>
+						</div>
+						<button class="btn btn-teal-outline" data-modal="pilot">Contact Sales</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ======================================================
+			CTA SECTION
+			====================================================== -->
+		<section id="cta-section">
+			<div class="cta-dots"></div>
+			<div class="cta-inner fade-up">
+				<h2>Ready to Go Digital? 🚀</h2>
+				<p>Join Vijayawada's first 100 clinics using ClinicOS for free!<br>Our team will visit your clinic, set everything up, and train your staff — at zero cost.</p>
+				<button class="btn btn-white-outline" data-modal="pilot" style="font-size:1.05rem;padding:1rem 2.2rem">Join Free Pilot Now →</button>
+				<div class="cta-trust">
+					<span>✅ 30 days free</span>
+					<span>✅ No credit card</span>
+					<span>✅ Free training</span>
+					<span>✅ Telugu support</span>
+				</div>
+			</div>
+		</section>
+		<!-- ======================================================
+			FOOTER
+			====================================================== -->
+		<footer id="footer">
+			<div class="footer-inner">
+				<div class="footer-grid">
+					<!-- Brand -->
+					<div>
+						<div class="footer-logo">
+							<div class="footer-logo-icon">C</div>
+							<span class="footer-logo-text">ClinicOS</span>
+						</div>
+						<p class="footer-desc">Smart clinic management for India's small clinics and nursing homes. Built with ❤️ in Vijayawada, Andhra Pradesh.</p>
+						<p style="font-size:0.8rem;color:#666;margin-top:0.4rem">Play Store Launch · April 2026</p>
+					</div>
+					<!-- Product -->
+					<div>
+						<div class="footer-col-title">Product</div>
+						<ul>
+							<li><a href="#features">Features</a></li>
+							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#how-it-works">How It Works</a></li>
+							<li><a href="https://lively-crostata-40ac4a.netlify.app/" target="_blank">Live Demo</a></li>
+						</ul>
+					</div>
+					<!-- Company -->
+					<div>
+						<div class="footer-col-title">Company</div>
+						<ul>
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms of Service</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<!-- Contact -->
+					<div>
+						<div class="footer-col-title">Contact</div>
+						<div class="footer-contact-row">📧 <a href="mailto:sriharsha100260@gmail.com">sriharsha100260@gmail.com</a></div>
+						<div class="footer-contact-row">📱 <a href="https://wa.me/917330937354">+91-7330937354</a></div>
+						<div class="footer-contact-row">📍 Vijayawada, Andhra Pradesh</div>
+						<div style="margin-top:1rem">
+							<a href="https://wa.me/917330937354?text=Hi, I want to know more about ClinicOS" target="_blank" class="btn btn-teal" style="font-size:0.85rem;padding:0.6rem 1.2rem">💬 WhatsApp Us</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<span>© 2026 Coding Rippler Tech Private Limited. All rights reserved.</span>
+					<div class="footer-legal">
+						<a href="#">Privacy</a>
+						<a href="#">Terms</a>
+						<a href="#">Refunds</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- ======================================================
+			MODAL — PILOT REGISTRATION
+			====================================================== -->
+		<div class="modal-overlay" id="pilotModal">
+			<div class="modal-box">
+				<button class="modal-close" id="modalClose" aria-label="Close">×</button>
+				<!-- Form -->
+				<div id="pilotForm">
+					<div class="modal-badge">🏥 Free 30-Day Pilot</div>
+					<h2 class="modal-title">Join the ClinicOS Pilot</h2>
+					<p class="modal-sub">Fill in your details and Harsha will contact you within 24 hours to schedule setup at your clinic. No commitment, no credit card.</p>
+					<form onsubmit="return false;">
+						<div class="form-group">
+							<label class="form-label" for="clinicName">Clinic Name <span class="req">*</span></label>
+							<input class="form-input" type="text" id="clinicName" placeholder="e.g. Sri Sai Clinic" required autocomplete="organization"/>
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="doctorName">Doctor / Owner Name <span class="req">*</span></label>
+							<input class="form-input" type="text" id="doctorName" placeholder="e.g. Dr. Ramakrishna Rao" required autocomplete="name"/>
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="whatsappNum">WhatsApp Number <span class="req">*</span></label>
+							<div class="phone-wrap">
+								<span class="phone-pre">🇮🇳 +91</span>
+								<input class="form-input" type="tel" id="whatsappNum" placeholder="98765 43210" maxlength="10" pattern="[6-9][0-9]{9}" required/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="form-label" for="emailAddr">Email Address <span style="color:#aaa;font-weight:400">(optional)</span></label>
+							<input class="form-input" type="email" id="emailAddr" placeholder="doctor@clinic.com" autocomplete="email"/>
+						</div>
+						<button class="form-submit" type="submit">Submit &amp; Join Pilot →</button>
+						<p class="modal-alt">
+							Want to fill the full form?
+							<a href="https://forms.gle/atao9vwM8vuDBiiE9" target="_blank" rel="noopener">Open Detailed Registration →</a>
+						</p>
+					</form>
+				</div>
+				<!-- Success State -->
+				<div id="modalSuccess" class="modal-success">
+					<div class="success-icon">🎉</div>
+					<h3 class="success-title">You're In the Pilot!</h3>
+					<p class="success-text">
+						Thank you for joining the ClinicOS Pilot!<br><br>
+						Harsha will contact you on WhatsApp within <strong>24 hours</strong> to schedule your free clinic setup.<br><br>
+						<strong>WhatsApp:</strong> <a href="https://wa.me/917330937354" style="color:var(--teal)">+91-7330937354</a><br><br>
+						<a href="https://drive.google.com/file/d/1soIMutKVzkzhk43__52L1KtjVqFA5f17/view?usp=drive_link" target="_blank" style="color:var(--teal);font-weight:700">📱 Watch the 52-second demo →</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Toast -->
+		<div class="toast" id="toast"></div>
+		<!-- WhatsApp FAB -->
+		<a class="wa-fab" href="https://wa.me/917330937354?text=Hi, I want to know more about ClinicOS pilot" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+			</svg>
+		</a>
+		<script src="script.js" defer></script>
+	</body>
 </html>
