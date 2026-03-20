@@ -1,516 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>ClinicOS | Free 30-Day Pilot — Smart Clinic Management, Vijayawada</title>
-		<meta name="description" content="ClinicOS is a smart clinic management app for Vijayawada clinics. Register patients in 10 seconds, manage queues, send SMS alerts, generate bills. Join the free 30-day pilot."/>
-		<meta name="theme-color" content="#208F9F"/>
-		<link rel="stylesheet" href="styles.css"/>
-	</head>
-	<body>
-		<!-- ======================================================
-			HEADER
-			====================================================== -->
-		<header id="header">
-			<div class="nav-inner">
-				<a href="#hero" class="nav-logo">
-					<div class="nav-logo-icon">C</div>
-					Clinic<strong>OS</strong>
-				</a>
-				<nav class="nav-links">
-					<a href="#hero">Home</a>
-					<a href="#about">About</a>
-					<a href="#features">Features</a>
-					<a href="#how-it-works">How It Works</a>
-					<a href="#pricing">Pricing</a>
-          <a href="#cta-section">Contact</a>
-				</nav>
-				<div class="nav-cta">
-					<button class="btn btn-teal" data-modal="pilot">Join Pilot</button>
-				</div>
-				<button class="hamburger" aria-label="Menu">
-				<span></span><span></span><span></span>
-				</button>
-			</div>
-		</header>
-		<!-- Mobile Menu -->
-		<div class="mobile-menu" id="mobileMenu">
-			<a href="#hero">Home</a>
-			<a href="#about">About</a>
-			<a href="#features">Features</a>
-			<a href="#how-it-works">How It Works</a>
-			<a href="#pricing">Pricing</a>
-      <a href="#cta-section">Contact</a>
-			<button class="btn btn-teal" data-modal="pilot">Join Free Pilot</button>
-		</div>
-		<!-- ======================================================
-			HERO
-			====================================================== -->
-		<section id="hero">
-			<div class="hero-bg-dots"></div>
-			<div class="hero-inner">
-				<!-- LEFT: Content -->
-				<div class="hero-content">
-					<div class="hero-badge fade-up">
-						<span>🚀</span> Play Store Launch · April 2026 · Vijayawada
-					</div>
-					<h1 class="fade-up d1" style="color: #FEA75B;">
-						Your Clinic,
-						Now <em>Smart</em> ✨
-					</h1>
-					<p class="hero-sub fade-up d2">
-						Manage patient queues, billing, and prescriptions in 10 seconds.
-						Built for Vijayawada clinics — works offline, sends SMS alerts, no hardware required.
-					</p>
-					<div class="hero-ctas fade-up d3">
-						<button class="btn btn-green" data-modal="pilot">Join Free Pilot →</button>
-						<a href="https://drive.google.com/file/d/1soIMutKVzkzhk43__52L1KtjVqFA5f17/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-white-outline">Watch Demo (52s)</a>
-					</div>
-					<div class="hero-stats fade-up d4">
-						<div>
-							<div class="hero-stat-num">50+</div>
-							<div class="hero-stat-label">Clinics Piloting</div>
-						</div>
-						<div>
-							<div class="hero-stat-num">10,000+</div>
-							<div class="hero-stat-label">Patients / Month</div>
-						</div>
-						<div>
-							<div class="hero-stat-num">30 min</div>
-							<div class="hero-stat-label">Setup Time</div>
-						</div>
-					</div>
-				</div>
-				<!-- RIGHT: Android Mockup -->
-				<div class="hero-mockup-wrap fade-up d2">
-					<div class="mockup-glow"></div>
-					<div class="android-phone">
-						<!-- Side buttons -->
-						<div class="phone-vol-up"></div>
-						<div class="phone-vol-down"></div>
-						<div class="phone-power"></div>
-						<!-- Notch -->
-						<div class="phone-notch-bar">
-							<div class="notch-speaker"></div>
-							<div class="notch-camera"></div>
-						</div>
-						<!-- Screen -->
-						<div class="phone-screen">
-							<!-- Status Bar -->
-							<div class="phone-statusbar">
-								<span class="status-time">9:41</span>
-								<div class="status-icons">
-									<span>●●●●</span>
-									<span>WiFi</span>
-									<span class="status-battery">🔋</span>
-								</div>
-							</div>
-							<!-- App Header -->
-							<div class="app-header">
-								<div class="app-header-label">ClinicOS</div>
-								<div class="app-header-title">OPD Queue Management</div>
-								<div class="live-badge">
-									<div class="live-dot"></div>
-									LIVE · General OPD
-								</div>
-							</div>
-							<!-- Now Serving -->
-							<div class="now-serving">
-								<div class="ns-lbl">Now Serving</div>
-								<div class="ns-token">24</div>
-								<div class="ns-name">Ravi Kumar Reddy</div>
-								<div class="ns-dept">General Consultation · In Progress</div>
-							</div>
-							<!-- Queue -->
-							<div class="queue-section">
-								<div class="queue-section-hdr">Waiting — 6 patients</div>
-								<div class="q-row">
-									<div class="q-n">25</div>
-									<div class="q-info">
-										<div class="q-nm">Padma Lakshmi</div>
-										<div class="q-t">~5 min wait</div>
-									</div>
-									<span class="q-bdg next">Next</span>
-								</div>
-								<div class="q-row">
-									<div class="q-n">26</div>
-									<div class="q-info">
-										<div class="q-nm">Suresh Naidu</div>
-										<div class="q-t">~12 min wait</div>
-									</div>
-									<span class="q-bdg wait">Wait</span>
-								</div>
-								<div class="q-row">
-									<div class="q-n">27</div>
-									<div class="q-info">
-										<div class="q-nm">Anitha Devi</div>
-										<div class="q-t">~20 min wait</div>
-									</div>
-									<span class="q-bdg wait">Wait</span>
-								</div>
-							</div>
-							<!-- Stats -->
-							<div class="phone-stats-row">
-								<div class="ph-stat">
-									<div class="ph-stat-n">31</div>
-									<div class="ph-stat-l">Today</div>
-								</div>
-								<div class="ph-stat">
-									<div class="ph-stat-n">6</div>
-									<div class="ph-stat-l">Waiting</div>
-								</div>
-								<div class="ph-stat">
-									<div class="ph-stat-n" style="color:var(--green)">₹6.2K</div>
-									<div class="ph-stat-l">Revenue</div>
-								</div>
-							</div>
-							<!-- Home Bar -->
-							<div class="phone-home"></div>
-						</div>
-						<!-- /screen -->
-					</div>
-					<!-- /android-phone -->
-					<!-- Floating badges -->
-					<div class="sms-badge-float">
-						<div class="sms-badge-float-title">📲 SMS Sent</div>
-						<div class="sms-badge-float-text">Token #25 — మీ వంతు దగ్గరపడింది! ~5 min</div>
-					</div>
-					<div class="offline-badge-float">📶 Offline Mode<br><span>Auto-syncing ✓</span></div>
-				</div>
-				<!-- /hero-mockup-wrap -->
-			</div>
-			<!-- /hero-inner -->
-		</section>
-		<!-- ======================================================
-			ABOUT
-			====================================================== -->
-		<section id="about">
-			<div class="about-inner">
-				<div class="about-body fade-up">
-					<div class="about-label">About ClinicOS</div>
-					<h2 class="about-title">Built for Vijayawada Clinics</h2>
-					<p>ClinicOS is a smart clinic management system designed specifically for small clinics, nursing homes, and individual practitioners across Andhra Pradesh.</p>
-					<p>We reduce patient registration time from 5 minutes to just 10 seconds. Our automated queue management sends SMS alerts to patients in Telugu and English — so your waiting room stays calm and your staff stays focused.</p>
-					<p>Built by CodingRippler Tech, a Vijayawada startup that visited 50+ clinics before writing a single line of code. We know your problems because we've seen them firsthand.</p>
-					<p>Join our free 30-day pilot — no commitment, no credit card, and our team comes to your clinic for setup and training.</p>
-					<div class="about-benefits">
-						<div class="about-benefit"><span class="ck">✅</span> 100% Free for 30 days</div>
-						<div class="about-benefit"><span class="ck">✅</span> Free Staff Training at your clinic</div>
-						<div class="about-benefit"><span class="ck">✅</span> No commitment — cancel anytime</div>
-						<div class="about-benefit"><span class="ck">✅</span> Official Play Store App · April 2026</div>
-					</div>
-				</div>
-				<div class="about-image-wrap fade-up d2">
-					<div class="about-img-box">
-						<img src="images/about-image.png" alt="">
-					</div>
-					<div class="pilot-badge">🎉 5 clinics already piloting!</div>
-				</div>
-			</div>
-		</section>
-		<!-- ======================================================
-			FEATURES
-			====================================================== -->
-		<section id="features">
-			<div class="features-inner">
-				<div class="text-center fade-up">
-					<div class="section-label">Features</div>
-					<h2 class="section-title">Everything Your Clinic <em>Needs</em></h2>
-					<p class="section-sub">8 powerful features that turn a chaotic clinic into a smooth, digital practice — all in one Android app.</p>
-				</div>
-				<div class="features-grid">
-					<div class="feature-card fade-up d1">
-						<div class="feat-icon">⚡</div>
-						<div class="feat-title">10-Second Registration</div>
-						<div class="feat-desc">Enter phone number, retrieve patient history instantly, assign token — done. Fastest patient registration in India.</div>
-						<span class="feat-tag">Fastest in India</span>
-					</div>
-					<div class="feature-card fade-up d2">
-						<div class="feat-icon">🎫</div>
-						<div class="feat-title">Token Queue Management</div>
-						<div class="feat-desc">Automatic token assignment with live "Now Serving" display. Staff manage flow with one tap — pause, skip, or call next.</div>
-						<span class="feat-tag">Live Display</span>
-					</div>
-					<div class="feature-card fade-up d3">
-						<div class="feat-icon">📱</div>
-						<div class="feat-title">SMS / WhatsApp Alerts</div>
-						<div class="feat-desc">Auto-notify patients in Telugu or English: token number, estimated wait, and when their turn arrives. No staff action needed.</div>
-						<span class="feat-tag">Telugu First</span>
-					</div>
-					<div class="feature-card fade-up d1">
-						<div class="feat-icon">💰</div>
-						<div class="feat-title">Instant Billing</div>
-						<div class="feat-desc">One-tap GST-compliant invoice generation. UPI QR code integration. Track daily collections and unpaid bills effortlessly.</div>
-						<span class="feat-tag">UPI QR Ready</span>
-					</div>
-					<div class="feature-card fade-up d2">
-						<div class="feat-icon">📋</div>
-						<div class="feat-title">Digital Prescriptions</div>
-						<div class="feat-desc">Templates for common complaints. Store and retrieve prescriptions instantly. No more lost paper prescriptions, ever.</div>
-						<span class="feat-tag">No Lost Papers</span>
-					</div>
-					<div class="feature-card fade-up d3">
-						<div class="feat-icon">📊</div>
-						<div class="feat-title">Analytics Dashboard</div>
-						<div class="feat-desc">Track patients per day, revenue trends, peak hours, and common complaints. Make smarter clinic decisions with real data.</div>
-						<span class="feat-tag">Real Insights</span>
-					</div>
-					<div class="feature-card fade-up d1">
-						<div class="feat-icon">🌐</div>
-						<div class="feat-title">Offline Mode</div>
-						<div class="feat-desc">Works completely without internet. All data saves locally on your Android device and syncs automatically when connection is restored.</div>
-						<span class="feat-tag">Always Works</span>
-					</div>
-					<div class="feature-card fade-up d2">
-						<div class="feat-icon">🔒</div>
-						<div class="feat-title">Secure &amp; DPDPA Ready</div>
-						<div class="feat-desc">256-bit SSL encryption. Patient data handled per India's DPDPA framework. Role-based access for doctors and assistants.</div>
-						<span class="feat-tag">Data Protected</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ======================================================
-			HOW IT WORKS
-			====================================================== -->
-		<section id="how-it-works">
-			<div class="how-inner">
-				<div class="text-center fade-up">
-					<div class="section-label">How It Works</div>
-					<h2 class="section-title">From Registration to <em>Consultation</em></h2>
-					<p class="section-sub">4 simple steps that replace a day's worth of paperwork — running on your existing Android phone.</p>
-				</div>
-				<div class="steps-grid">
-					<div class="step-card fade-up d1">
-						<div class="step-num">1</div>
-						<div class="step-icon">📱</div>
-						<h3 class="step-title">Register Patient</h3>
-						<p class="step-desc">Receptionist enters the patient's phone number. Returning patients load instantly. New patients registered in under 10 seconds.</p>
-						<span class="step-tag">⚡ Under 10 seconds</span>
-					</div>
-					<div class="step-card fade-up d2">
-						<div class="step-num">2</div>
-						<div class="step-icon">🎫</div>
-						<h3 class="step-title">Get Token</h3>
-						<p class="step-desc">Automatic token generated and displayed on the clinic screen. Patient receives SMS with token number and estimated wait time.</p>
-						<span class="step-tag">📲 Instant SMS in Telugu</span>
-					</div>
-					<div class="step-card fade-up d3">
-						<div class="step-num">3</div>
-						<div class="step-icon">💬</div>
-						<h3 class="step-title">SMS Alert</h3>
-						<p class="step-desc">Patient gets WhatsApp/SMS: "Your turn in 5 mins!" They can wait outside, have tea, rest — and return exactly when needed.</p>
-						<span class="step-tag">🔔 Zero missed turns</span>
-					</div>
-					<div class="step-card fade-up d4">
-						<div class="step-num">4</div>
-						<div class="step-icon">🩺</div>
-						<h3 class="step-title">Consult &amp; Bill</h3>
-						<p class="step-desc">Doctor consults with full patient history visible. Receptionist generates GST bill in one tap. Queue auto-advances to next token.</p>
-						<span class="step-tag">✅ Zero paper, zero confusion</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ======================================================
-			PRICING
-			====================================================== -->
-		<section id="pricing">
-			<div class="pricing-inner">
-				<div class="text-center fade-up">
-					<div class="section-label">Pricing</div>
-					<h2 class="section-title">Simple, <em>Honest</em> Pricing</h2>
-					<p class="section-sub">Start free for 30 days. No credit card. Cancel anytime. Your first 30 days are completely free — no strings attached.</p>
-				</div>
-				<div class="pricing-grid">
-					<!-- Pilot -->
-					<div class="pricing-card featured fade-up d1">
-						<div class="feat-ribbon">🎁 Start Here — FREE</div>
-						<div class="p-badge">Pilot</div>
-						<div class="p-name">Free Pilot</div>
-						<div class="p-price">FREE</div>
-						<div class="p-dur">30 Days — Full Access</div>
-						<div class="p-divider"></div>
-						<div class="p-features">
-							<div class="p-feat"><span class="ck">✓</span> All features included</div>
-							<div class="p-feat"><span class="ck">✓</span> Unlimited patients</div>
-							<div class="p-feat"><span class="ck">✓</span> Free staff training</div>
-							<div class="p-feat"><span class="ck">✓</span> Setup at your clinic</div>
-							<div class="p-feat"><span class="ck">✓</span> Email &amp; WhatsApp support</div>
-							<div class="p-feat"><span class="ck">✓</span> No credit card required</div>
-						</div>
-						<button class="btn btn-teal" data-modal="pilot">Join Pilot</button>
-					</div>
-					<!-- Pro -->
-					<div class="pricing-card fade-up d2">
-						<div class="p-badge">Pro</div>
-						<div class="p-name">Pro</div>
-						<div class="p-price"><sup>₹</sup>999<small>/mo</small></div>
-						<div class="p-dur">Per Month — after pilot</div>
-						<div class="p-divider"></div>
-						<div class="p-features">
-							<div class="p-feat"><span class="ck">✓</span> All Pilot features</div>
-							<div class="p-feat"><span class="ck">✓</span> Unlimited patients</div>
-							<div class="p-feat"><span class="ck">✓</span> UPI QR payment integration</div>
-							<div class="p-feat"><span class="ck">✓</span> Priority WhatsApp support</div>
-							<div class="p-feat"><span class="ck">✓</span> Monthly analytics reports</div>
-							<div class="p-feat"><span class="ck">✓</span> Telugu UI support</div>
-						</div>
-						<button class="btn btn-teal-outline" onclick="window.open('https://wa.me/917330937354?text=I want to subscribe to ClinicOS Pro ₹999/month')">Subscribe Now</button>
-					</div>
-					<!-- Multi-Clinic -->
-					<div class="pricing-card fade-up d3">
-						<div class="p-badge">Multi-Clinic</div>
-						<div class="p-name">Multi-Clinic</div>
-						<div class="p-price"><sup>₹</sup>2,499<small>/mo</small></div>
-						<div class="p-dur">Per Month — all branches</div>
-						<div class="p-divider"></div>
-						<div class="p-features">
-							<div class="p-feat"><span class="ck">✓</span> All Pro features</div>
-							<div class="p-feat"><span class="ck">✓</span> Up to 5 clinic branches</div>
-							<div class="p-feat"><span class="ck">✓</span> Advanced analytics &amp; reports</div>
-							<div class="p-feat"><span class="ck">✓</span> Dedicated account manager</div>
-							<div class="p-feat"><span class="ck">✓</span> API access</div>
-							<div class="p-feat"><span class="ck">✓</span> Custom branding</div>
-						</div>
-						<button class="btn btn-teal-outline" data-modal="pilot">Contact Sales</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ======================================================
-			CTA SECTION
-			====================================================== -->
-		<section id="cta-section">
-			<div class="cta-dots"></div>
-			<div class="cta-inner fade-up">
-				<h2>Ready to Go Digital? 🚀</h2>
-				<p>Join Vijayawada's first 100 clinics using ClinicOS for free!<br>Our team will visit your clinic, set everything up, and train your staff — at zero cost.</p>
-				<button class="btn btn-white-outline" data-modal="pilot" style="font-size:1.05rem;padding:1rem 2.2rem">Join Free Pilot Now →</button>
-				<div class="cta-trust">
-					<span>✅ 30 days free</span>
-					<span>✅ No credit card</span>
-					<span>✅ Free training</span>
-					<span>✅ Telugu support</span>
-				</div>
-			</div>
-		</section>
-		<!-- ======================================================
-			FOOTER
-			====================================================== -->
-		<footer id="footer">
-			<div class="footer-inner">
-				<div class="footer-grid">
-					<!-- Brand -->
-					<div>
-						<div class="footer-logo">
-							<div class="footer-logo-icon">C</div>
-							<span class="footer-logo-text">ClinicOS</span>
-						</div>
-						<p class="footer-desc">Smart clinic management for India's small clinics and nursing homes. Built with ❤️ in Vijayawada, Andhra Pradesh.</p>
-						<p style="font-size:0.8rem;color:#666;margin-top:0.4rem">Play Store Launch · April 2026</p>
-					</div>
-					<!-- Product -->
-					<div>
-						<div class="footer-col-title">Product</div>
-						<ul>
-							<li><a href="#features">Features</a></li>
-							<li><a href="#pricing">Pricing</a></li>
-							<li><a href="#how-it-works">How It Works</a></li>
-							<li><a href="https://lively-crostata-40ac4a.netlify.app/" target="_blank">Live Demo</a></li>
-						</ul>
-					</div>
-					<!-- Company -->
-					<div>
-						<div class="footer-col-title">Company</div>
-						<ul>
-							<li><a href="#about">About Us</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Terms of Service</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-					<!-- Contact -->
-					<div>
-						<div class="footer-col-title">Contact</div>
-						<div class="footer-contact-row">📧 <a href="mailto:sriharsha100260@gmail.com">sriharsha100260@gmail.com</a></div>
-						<div class="footer-contact-row">📱 <a href="https://wa.me/917330937354">+91-7330937354</a></div>
-						<div class="footer-contact-row">📍 Vijayawada, Andhra Pradesh</div>
-						<div style="margin-top:1rem">
-							<a href="https://wa.me/917330937354?text=Hi, I want to know more about ClinicOS" target="_blank" class="btn btn-teal" style="font-size:0.85rem;padding:0.6rem 1.2rem">💬 WhatsApp Us</a>
-						</div>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<span>© 2026 Coding Rippler Tech Private Limited. All rights reserved.</span>
-					<div class="footer-legal">
-						<a href="#">Privacy</a>
-						<a href="#">Terms</a>
-						<a href="#">Refunds</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- ======================================================
-			MODAL — PILOT REGISTRATION
-			====================================================== -->
-		<div class="modal-overlay" id="pilotModal">
-			<div class="modal-box">
-				<button class="modal-close" id="modalClose" aria-label="Close">×</button>
-				<!-- Form -->
-				<div id="pilotForm">
-					<div class="modal-badge">🏥 Free 30-Day Pilot</div>
-					<h2 class="modal-title">Join the ClinicOS Pilot</h2>
-					<p class="modal-sub">Fill in your details and Harsha will contact you within 24 hours to schedule setup at your clinic. No commitment, no credit card.</p>
-					<form onsubmit="return false;">
-						<div class="form-group">
-							<label class="form-label" for="clinicName">Clinic Name <span class="req">*</span></label>
-							<input class="form-input" type="text" id="clinicName" placeholder="e.g. Sri Sai Clinic" required autocomplete="organization"/>
-						</div>
-						<div class="form-group">
-							<label class="form-label" for="doctorName">Doctor / Owner Name <span class="req">*</span></label>
-							<input class="form-input" type="text" id="doctorName" placeholder="e.g. Dr. Ramakrishna Rao" required autocomplete="name"/>
-						</div>
-						<div class="form-group">
-							<label class="form-label" for="whatsappNum">WhatsApp Number <span class="req">*</span></label>
-							<div class="phone-wrap">
-								<span class="phone-pre">🇮🇳 +91</span>
-								<input class="form-input" type="tel" id="whatsappNum" placeholder="98765 43210" maxlength="10" pattern="[6-9][0-9]{9}" required/>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="form-label" for="emailAddr">Email Address <span style="color:#aaa;font-weight:400">(optional)</span></label>
-							<input class="form-input" type="email" id="emailAddr" placeholder="doctor@clinic.com" autocomplete="email"/>
-						</div>
-						<button class="form-submit" type="submit">Submit &amp; Join Pilot →</button>
-						<p class="modal-alt">
-							Want to fill the full form?
-							<a href="https://forms.gle/atao9vwM8vuDBiiE9" target="_blank" rel="noopener">Open Detailed Registration →</a>
-						</p>
-					</form>
-				</div>
-				<!-- Success State -->
-				<div id="modalSuccess" class="modal-success">
-					<div class="success-icon">🎉</div>
-					<h3 class="success-title">You're In the Pilot!</h3>
-					<p class="success-text">
-						Thank you for joining the ClinicOS Pilot!<br><br>
-						Harsha will contact you on WhatsApp within <strong>24 hours</strong> to schedule your free clinic setup.<br><br>
-						<strong>WhatsApp:</strong> <a href="https://wa.me/917330937354" style="color:var(--teal)">+91-7330937354</a><br><br>
-						<a href="https://drive.google.com/file/d/1soIMutKVzkzhk43__52L1KtjVqFA5f17/view?usp=drive_link" target="_blank" style="color:var(--teal);font-weight:700">📱 Watch the 52-second demo →</a>
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- Toast -->
-		<div class="toast" id="toast"></div>
-		<!-- WhatsApp FAB -->
-		<a class="wa-fab" href="https://wa.me/917330937354?text=Hi, I want to know more about ClinicOS pilot" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-			</svg>
-		</a>
-		<script src="script.js" defer></script>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ClinicOS - The Operating System Your Clinic Needs</title>
+        <meta name="description" content="Replace paper registers, manual billing, and crowded waiting rooms with ClinicOS. Built for Indian clinics - offline-ready, fast, zero training needed.">
+        <link rel="icon" type="image/png" href="images/clinicos-icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- ═══════════════════════════════════════════
+             NAVIGATION
+        ════════════════════════════════════════════ -->
+        <header class="nav" id="navbar">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-logo" onclick="smoothScroll('hero')">
+                    <svg viewBox="180 275 860 445" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <clipPath id="nc1"><rect x="0" y="0" width="417" height="796"/></clipPath>
+                            <clipPath id="ns1"><path d="M254.636719 370.625L418.8125 370.625L418.8125 618.011719L254.636719 618.011719Z"/></clipPath>
+                            <clipPath id="ns2"><path d="M410.015625 401.5625L940 401.5625L940 649.695312L410.015625 649.695312Z"/></clipPath>
+                            <clipPath id="ns3"><path d="M744.3125 401.5625L1042 401.5625L1042 649.695312L744.3125 649.695312Z"/></clipPath>
+                            <clipPath id="ncl"><rect x="0" y="0" width="366" height="280"/></clipPath>
+                        </defs>
+                        <g transform="translate(143,97)">
+                            <g clip-path="url(#nc1)">
+                                <g transform="translate(5.002645,612.081434)">
+                                    <path class="logo-c" d="M231.6875 6.015625C194.988281 6.015625 162.300781-2.394531 133.625-19.21875 104.945312-36.039062 82.484375-60.648438 66.234375-93.046875 49.984375-125.453125 41.859375-164.304688 41.859375-209.609375 41.859375-254.921875 49.984375-293.773438 66.234375-326.171875 82.484375-358.578125 104.945312-383.191406 133.625-400.015625 162.300781-416.835938 194.988281-425.25 231.6875-425.25 270.882812-425.25 303.476562-417.84375 329.46875-403.03125 355.46875-388.21875 374.207031-365.898438 385.6875-336.078125L354.140625-315.140625 346.96875-315.140625C335.5-339.035156 320.585938-356 302.234375-366.03125 283.878906-376.070312 260.363281-381.09375 231.6875-381.09375 205.3125-381.09375 181.894531-375.210938 161.4375-363.453125 140.988281-351.703125 124.738281-333.066406 112.6875-307.546875 100.644531-282.023438 94.625-249.378906 94.625-209.609375 94.625-169.847656 100.644531-137.253906 112.6875-111.828125 124.738281-86.398438 140.988281-67.804688 161.4375-56.046875 181.894531-44.296875 205.3125-38.421875 231.6875-38.421875 262.082031-38.421875 286.9375-45.253906 306.25-58.921875 325.5625-72.597656 339.898438-94.726562 349.265625-125.3125L356.4375-125.3125 389.40625-108.96875C379.46875-71.875 361.066406-43.4375 334.203125-23.65625 307.347656-3.875 273.175781 6.015625 231.6875 6.015625Z"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g clip-path="url(#ns1)">
+                            <path class="logo-pulse" fill-rule="evenodd" d="M418.4375 536.203125L394.96875 370.9375 368.074219 552.828125 344.117188 434.5 327.492188 529.847656 323.089844 510.777344 279.085938 510.777344C278.597656 509.308594 277.617188 507.84375 276.152344 506.375 273.707031 503.933594 270.285156 502.464844 266.863281 502.464844 263.4375 502.464844 260.015625 503.933594 257.570312 506.375 256.105469 508.332031 254.636719 511.753906 254.636719 515.175781 254.636719 518.601562 256.105469 522.023438 258.550781 524.46875 260.996094 526.914062 264.417969 528.378906 267.839844 528.378906 271.261719 528.378906 274.683594 526.914062 277.128906 524.46875 278.597656 523 279.574219 521.535156 280.0625 519.578125L316.246094 519.578125 328.960938 564.074219 344.117188 486.328125 367.585938 618.347656 394.96875 447.703125 409.148438 544.515625 929.882812 544.515625C936.730469 544.027344 935.75 536.691406 930.371094 536.203125ZM271.75 511.265625C270.773438 510.289062 269.308594 509.308594 267.351562 509.308594 265.882812 509.308594 264.417969 509.800781 263.4375 511.265625 262.460938 512.242188 261.484375 513.710938 261.484375 515.667969 261.484375 517.132812 261.972656 518.601562 263.4375 520.066406 264.417969 521.046875 265.882812 521.535156 267.351562 521.535156 268.816406 521.535156 270.773438 521.046875 271.75 520.066406 272.730469 519.089844 273.707031 517.621094 273.707031 515.667969 273.707031 513.710938 272.730469 512.242188 271.75 511.265625Z"/>
+                        </g>
+                        <g clip-path="url(#ns2)">
+                            <path class="logo-pulse" fill-rule="evenodd" d="M422.90625 567.136719L399.4375 401.871094 372.542969 583.761719 348.585938 465.433594 331.960938 560.78125 327.558594 541.710938 283.554688 541.710938C283.066406 540.246094 282.085938 538.777344 280.621094 537.3125 278.175781 534.867188 274.753906 533.398438 271.332031 533.398438 267.90625 533.398438 264.484375 534.867188 262.039062 537.3125 260.574219 539.265625 259.105469 542.691406 259.105469 546.113281 259.105469 549.535156 260.574219 552.957031 263.019531 555.402344 265.464844 557.847656 268.886719 559.3125 272.308594 559.3125 275.730469 559.3125 279.152344 557.847656 281.597656 555.402344 283.066406 553.9375 284.042969 552.46875 284.53125 550.511719L320.714844 550.511719 333.425781 595.007812 348.585938 517.265625 372.054688 649.28125 399.4375 478.636719 413.617188 575.449219 934.351562 575.449219C941.199219 574.960938 940.21875 567.625 934.839844 567.136719ZM276.21875 542.199219C275.242188 541.222656 273.773438 540.246094 271.820312 540.246094 270.351562 540.246094 268.886719 540.734375 267.90625 542.199219 266.929688 543.179688 265.953125 544.644531 265.953125 546.601562 265.953125 548.066406 266.441406 549.535156 267.90625 551.003906 268.886719 551.980469 270.351562 552.46875 271.820312 552.46875 273.285156 552.46875 275.242188 551.980469 276.21875 551.003906 277.199219 550.023438 278.175781 548.558594 278.175781 546.601562 278.175781 544.644531 277.199219 543.179688 276.21875 542.199219Z"/>
+                        </g>
+                        <g clip-path="url(#ns3)">
+                            <path class="logo-pulse" fill-rule="evenodd" d="M525.421875 567.136719L501.953125 401.871094 475.0625 583.761719 451.101562 465.433594 434.476562 560.78125 430.078125 541.710938 386.070312 541.710938C385.582031 540.246094 384.605469 538.777344 383.136719 537.3125 380.691406 534.867188 377.269531 533.398438 373.847656 533.398438 370.425781 533.398438 367.003906 534.867188 364.558594 537.3125 363.089844 539.265625 361.625 542.691406 361.625 546.113281 361.625 549.535156 363.089844 552.957031 365.535156 555.402344 367.980469 557.847656 371.402344 559.3125 374.824219 559.3125 378.25 559.3125 381.671875 557.847656 384.117188 555.402344 385.582031 553.9375 386.558594 552.46875 387.050781 550.511719L423.230469 550.511719 435.945312 595.007812 451.101562 517.265625 474.570312 649.28125 501.953125 478.636719 516.132812 575.449219 1036.871094 575.449219C1043.714844 574.960938 1042.738281 567.625 1037.359375 567.136719ZM378.738281 542.199219C377.757812 541.222656 376.292969 540.246094 374.335938 540.246094 372.871094 540.246094 371.402344 540.734375 370.425781 542.199219 369.445312 543.179688 368.46875 544.644531 368.46875 546.601562 368.46875 548.066406 368.957031 549.535156 370.425781 551.003906 371.402344 551.980469 372.871094 552.46875 374.335938 552.46875 375.804688 552.46875 377.757812 551.980469 378.738281 551.003906 379.714844 550.023438 380.691406 548.558594 380.691406 546.601562 380.691406 544.644531 379.714844 543.179688 378.738281 542.199219Z"/>
+                        </g>
+                        <g transform="translate(485,358)">
+                            <g clip-path="url(#ncl)">
+                                <g transform="translate(2.516963,201.534611)">
+                                    <path class="logo-linic" d="M39.03125 2.140625C32.519531 2.140625 27.34375 0.804688 23.5-1.859375 19.664062-4.523438 16.90625-8.296875 15.21875-13.171875 13.53125-18.046875 12.6875-23.738281 12.6875-30.25L12.6875-136.59375 41.375-136.59375 41.375-29.078125C41.375-25.953125 41.925781-23.835938 43.03125-22.734375 44.132812-21.628906 45.335938-21.078125 46.640625-21.078125 47.160156-21.078125 47.644531-21.109375 48.09375-21.171875 48.550781-21.234375 49.171875-21.332031 49.953125-21.46875L53.46875-0.1875C51.90625 0.457031 49.921875 1.003906 47.515625 1.453125 45.109375 1.910156 42.28125 2.140625 39.03125 2.140625Z"/>
+                                </g>
+                                <g transform="translate(57.545823,201.534611)">
+                                    <path class="logo-linic" d="M12.6875 0L12.6875-96.796875 41.375-96.796875 41.375 0ZM26.921875-111.03125C22.109375-111.03125 18.203125-112.394531 15.203125-115.125 12.210938-117.863281 10.71875-121.507812 10.71875-126.0625 10.71875-130.613281 12.210938-134.253906 15.203125-136.984375 18.203125-139.722656 22.109375-141.09375 26.921875-141.09375 31.734375-141.09375 35.632812-139.722656 38.625-136.984375 41.625-134.253906 43.125-130.613281 43.125-126.0625 43.125-121.507812 41.625-117.863281 38.625-115.125 35.632812-112.394531 31.734375-111.03125 26.921875-111.03125Z"/>
+                                </g>
+                                <g transform="translate(110.623307,201.534611)">
+                                    <path class="logo-linic" d="M12.6875 0L12.6875-96.796875 36.09375-96.796875 38.046875-84.5 38.828125-84.5C42.859375-88.53125 47.410156-91.972656 52.484375-94.828125 57.566406-97.691406 63.359375-99.125 69.859375-99.125 80.523438-99.125 88.195312-95.644531 92.875-88.6875 97.5625-81.726562 99.90625-72.203125 99.90625-60.109375L99.90625 0 71.21875 0 71.21875-56.390625C71.21875-63.421875 70.273438-68.234375 68.390625-70.828125 66.503906-73.429688 63.484375-74.734375 59.328125-74.734375 55.679688-74.734375 52.554688-73.921875 49.953125-72.296875 47.347656-70.671875 44.488281-68.363281 41.375-65.375L41.375 0Z"/>
+                                </g>
+                                <g transform="translate(221.461638,201.534611)">
+                                    <path class="logo-linic" d="M12.6875 0L12.6875-96.796875 41.375-96.796875 41.375 0ZM26.921875-111.03125C22.109375-111.03125 18.203125-112.394531 15.203125-115.125 12.210938-117.863281 10.71875-121.507812 10.71875-126.0625 10.71875-130.613281 12.210938-134.253906 15.203125-136.984375 18.203125-139.722656 22.109375-141.09375 26.921875-141.09375 31.734375-141.09375 35.632812-139.722656 38.625-136.984375 41.625-134.253906 43.125-130.613281 43.125-126.0625 43.125-121.507812 41.625-117.863281 38.625-115.125 35.632812-112.394531 31.734375-111.03125 26.921875-111.03125Z"/>
+                                </g>
+                                <g transform="translate(274.539122,201.534611)">
+                                    <path class="logo-linic" d="M55.421875 2.34375C46.316406 2.34375 38.085938 0.328125 30.734375-3.703125 23.378906-7.734375 17.585938-13.519531 13.359375-21.0625 9.140625-28.613281 7.03125-37.722656 7.03125-48.390625 7.03125-59.054688 9.367188-68.160156 14.046875-75.703125 18.734375-83.253906 24.914062-89.046875 32.59375-93.078125 40.269531-97.109375 48.53125-99.125 57.375-99.125 63.351562-99.125 68.71875-98.179688 73.46875-96.296875 78.21875-94.410156 82.285156-91.90625 85.671875-88.78125L72.203125-71.03125C70.515625-72.457031 68.59375-73.625 66.4375-74.53125 64.289062-75.445312 61.851562-75.90625 59.125-75.90625 54.570312-75.90625 50.601562-74.800781 47.21875-72.59375 43.84375-70.382812 41.175781-67.195312 39.21875-63.03125 37.269531-58.863281 36.296875-53.984375 36.296875-48.390625 36.296875-42.796875 37.269531-37.914062 39.21875-33.75 41.175781-29.59375 43.8125-26.40625 47.125-24.1875 50.445312-21.976562 54.1875-20.875 58.34375-20.875 61.59375-20.875 64.648438-21.457031 67.515625-22.625 70.378906-23.800781 73.046875-25.300781 75.515625-27.125L86.84375-9.5625C82.800781-5.914062 78.046875-3.019531 72.578125-0.875 67.117188 1.269531 61.398438 2.34375 55.421875 2.34375Z"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="translate(839.21747,561.148295)">
+                            <path class="logo-os" d="M58.546875 1.546875C48.703125 1.546875 40.019531-0.457031 32.5-4.46875 24.988281-8.488281 19.101562-14.625 14.84375-22.875 10.582031-31.132812 8.453125-41.410156 8.453125-53.703125 8.453125-65.992188 10.582031-76.265625 14.84375-84.515625 19.101562-92.765625 24.988281-98.898438 32.5-102.921875 40.019531-106.941406 48.703125-108.953125 58.546875-108.953125 68.390625-108.953125 77.054688-106.953125 84.546875-102.953125 92.046875-98.960938 97.910156-92.828125 102.140625-84.546875 106.378906-76.273438 108.5-65.992188 108.5-53.703125 108.5-41.410156 106.378906-31.125 102.140625-22.84375 97.910156-14.570312 92.046875-8.4375 84.546875-4.4375 77.054688-0.445312 68.390625 1.546875 58.546875 1.546875ZM58.546875-16.890625C67.660156-16.890625 74.613281-19.816406 79.40625-25.671875 84.207031-31.523438 86.609375-40.867188 86.609375-53.703125 86.609375-66.535156 84.207031-75.890625 79.40625-81.765625 74.613281-87.640625 67.660156-90.578125 58.546875-90.578125 49.390625-90.578125 42.398438-87.640625 37.578125-81.765625 32.753906-75.890625 30.34375-66.535156 30.34375-53.703125 30.34375-40.867188 32.753906-31.523438 37.578125-25.671875 42.398438-19.816406 49.390625-16.890625 58.546875-16.890625Z"/>
+                        </g>
+                        <g transform="translate(946.609664,561.148295)">
+                            <path class="logo-os" d="M47.609375 1.546875C40.160156 1.546875 33.535156 0.628906 27.734375-1.203125 21.929688-3.046875 17.09375-5.457031 13.21875-8.4375 9.351562-11.425781 6.390625-14.710938 4.328125-18.296875L16.015625-32.546875 17.859375-32.546875C21.085938-27.742188 25.1875-23.921875 30.15625-21.078125 35.125-18.242188 40.941406-16.828125 47.609375-16.828125 53.285156-16.828125 57.566406-18.023438 60.453125-20.421875 63.347656-22.816406 64.796875-26.125 64.796875-30.34375 64.796875-32.882812 64.328125-35.007812 63.390625-36.71875 62.460938-38.4375 60.921875-39.90625 58.765625-41.125 56.609375-42.351562 53.695312-43.410156 50.03125-44.296875L36.21875-47.453125C26.570312-49.660156 19.382812-53.320312 14.65625-58.4375 9.925781-63.550781 7.5625-70.203125 7.5625-78.390625 7.5625-84.460938 9.078125-89.800781 12.109375-94.40625 15.148438-99.007812 19.570312-102.582031 25.375-105.125 31.1875-107.675781 38.128906-108.953125 46.203125-108.953125 54.484375-108.953125 61.570312-107.859375 67.46875-105.671875 73.375-103.492188 78.359375-100.15625 82.421875-95.65625L71.921875-81.25 70.078125-81.25C67.046875-84.4375 63.570312-86.820312 59.65625-88.40625 55.738281-90 51.253906-90.796875 46.203125-90.796875 40.378906-90.796875 35.945312-89.765625 32.90625-87.703125 29.875-85.648438 28.359375-82.8125 28.359375-79.1875 28.359375-75.8125 29.421875-73.117188 31.546875-71.109375 33.679688-69.097656 37.367188-67.53125 42.609375-66.40625L56.71875-63.46875C67.144531-61.269531 74.707031-57.535156 79.40625-52.265625 84.113281-47.003906 86.46875-40.132812 86.46875-31.65625 86.46875-24.945312 85.019531-19.109375 82.125-14.140625 79.238281-9.171875 74.878906-5.3125 69.046875-2.5625 63.222656 0.175781 56.078125 1.546875 47.609375 1.546875Z"/>
+                        </g>
+                    </svg>
+                </a>
+                <nav class="nav-links">
+                    <button class="nav-link" onclick="smoothScroll('features')">Features</button>
+                    <button class="nav-link" onclick="smoothScroll('process')">How it works</button>
+                    <button class="nav-link" onclick="smoothScroll('testimonials')">Testimonials</button>
+                    <button class="nav-link" style="position:relative" onclick="return false">
+                        Case Studies <span style="font-size:9px;font-weight:700;background:var(--g700);color:#fff;padding:2px 6px;border-radius:4px;margin-left:4px;vertical-align:middle">SOON</span>
+                    </button>
+                    <button class="nav-link" onclick="smoothScroll('demo')">Contact</button>
+                    <button class="nav-cta" onclick="smoothScroll('demo')">Request a Demo</button>
+                </nav>
+                <button class="nav-mobile-btn" onclick="toggleMobile()" aria-label="Menu">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round">
+                        <line x1="4" y1="7" x2="20" y2="7"/>
+                        <line x1="4" y1="12" x2="20" y2="12"/>
+                        <line x1="4" y1="17" x2="20" y2="17"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-mobile-menu" id="mobile-menu">
+                <button onclick="smoothScroll('features')">Features</button>
+                <button onclick="smoothScroll('process')">How it works</button>
+                <button onclick="smoothScroll('testimonials')">Testimonials</button>
+                <button onclick="return false">
+                    Case Studies <span style="font-size:9px;font-weight:700;background:var(--g700);color:#fff;padding:2px 6px;border-radius:4px;margin-left:4px">SOON</span>
+                </button>
+                <button onclick="smoothScroll('demo')">Contact</button>
+                <button class="mob-cta" onclick="smoothScroll('demo')">Request a Demo</button>
+            </div>
+        </header>
+
+        <!-- ═══════════════════════════════════════════
+             HERO
+        ════════════════════════════════════════════ -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="images/hero-bg.png" alt="ClinicOS Hero" loading="eager">
+                <div class="hero-overlay"></div>
+                <div class="hero-grain"></div>
+            </div>
+            <div class="hero-content">
+                <div>
+                    <div class="reveal">
+                        <div class="hero-badge">
+                            <div class="hero-badge-dot"></div>
+                            <span class="hero-badge-text">Now piloting in Vijayawada</span>
+                        </div>
+                    </div>
+                    <h1 class="reveal reveal-d1">The operating system your clinic never knew it needed</h1>
+                    <p class="hero-sub reveal reveal-d2">Replace paper registers, manual billing, and crowded waiting rooms with a single app. Designed for the way Indian clinics actually work &#8212; offline-ready, fast, and zero training needed.</p>
+                    <div class="hero-buttons reveal reveal-d3">
+                        <button class="btn-primary" onclick="smoothScroll('demo')">Request a Demo</button>
+                        <button class="btn-ghost" onclick="smoothScroll('features')">Explore Features</button>
+                    </div>
+                    <div class="hero-stats reveal reveal-d5">
+                        <div>
+                            <div class="hero-stat-num">15+</div>
+                            <div class="hero-stat-label">Pilot clinics</div>
+                        </div>
+                        <div>
+                            <div class="hero-stat-num">10s</div>
+                            <div class="hero-stat-label">To register a patient</div>
+                        </div>
+                        <div>
+                            <div class="hero-stat-num">Zero</div>
+                            <div class="hero-stat-label">Training needed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-d3" style="display:flex;justify-content:center;position:relative">
+                    <div class="phone-mockup">
+                        <div class="phone-status">
+                            <span style="font-size:13px;font-weight:600;color:var(--ink)">9:41</span>
+                            <svg width="14" height="10" viewBox="0 0 16 12">
+                                <rect x="0" y="5" width="3" height="7" rx=".5" fill="var(--ink)"/>
+                                <rect x="4.5" y="3" width="3" height="9" rx=".5" fill="var(--ink)"/>
+                                <rect x="9" y="1" width="3" height="11" rx=".5" fill="var(--ink)"/>
+                                <rect x="13" y="0" width="3" height="12" rx=".5" fill="var(--ink)" opacity=".3"/>
+                            </svg>
+                        </div>
+                        <div class="phone-header">
+                            <div class="phone-logo">
+                                <img src="images/clinicos-icon.png" alt="ClinicOS" width="32" height="32" style="width:32px;height:32px;border-radius:6px">
+                            </div>
+                            <span style="font-weight:700;font-size:15px;color:var(--ink)">ClinicOS</span>
+                            <div style="margin-left:auto;display:flex;align-items:center;gap:4px">
+                                <div style="width:7px;height:7px;border-radius:50%;background:var(--g500)"></div>
+                                <span style="font-size:10px;color:var(--g700);font-weight:600">Online</span>
+                            </div>
+                        </div>
+                        <div style="padding:14px 20px">
+                            <div class="phone-queue-card">
+                                <div style="display:flex;align-items:center;gap:5px;margin-bottom:10px">
+                                    <div style="width:6px;height:6px;border-radius:50%;background:#4ADE80"></div>
+                                    <span style="font-size:10px;font-weight:600;opacity:.85">LIVE QUEUE</span>
+                                </div>
+                                <div class="phone-queue-stats">
+                                    <div>
+                                        <div class="phone-queue-val">12</div>
+                                        <div class="phone-queue-label">In Queue</div>
+                                    </div>
+                                    <div>
+                                        <div class="phone-queue-val">~8m</div>
+                                        <div class="phone-queue-label">Est. Wait</div>
+                                    </div>
+                                    <div>
+                                        <div class="phone-queue-val">#7</div>
+                                        <div class="phone-queue-label">Serving</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="font-size:11px;font-weight:600;color:var(--muted);font-family:var(--font-mono);margin-bottom:10px;letter-spacing:.06em">NEXT UP</div>
+                            <div class="phone-patient">
+                                <div style="display:flex;align-items:center;gap:10px">
+                                    <div class="phone-avatar" style="background:var(--g100)">PS</div>
+                                    <div>
+                                        <div style="font-size:12px;font-weight:600;color:var(--ink)">Priya Sharma</div>
+                                        <div style="font-size:10px;color:var(--muted)">Token #8</div>
+                                    </div>
+                                </div>
+                                <span style="font-size:10px;color:var(--g600);font-weight:600">~2 min</span>
+                            </div>
+                            <div class="phone-patient">
+                                <div style="display:flex;align-items:center;gap:10px">
+                                    <div class="phone-avatar" style="background:var(--warm)">AV</div>
+                                    <div>
+                                        <div style="font-size:12px;font-weight:600;color:var(--ink)">Amit Verma</div>
+                                        <div style="font-size:10px;color:var(--muted)">Token #9</div>
+                                    </div>
+                                </div>
+                                <span style="font-size:10px;color:var(--g600);font-weight:600">~10 min</span>
+                            </div>
+                            <div class="phone-patient">
+                                <div style="display:flex;align-items:center;gap:10px">
+                                    <div class="phone-avatar" style="background:var(--g200)">SD</div>
+                                    <div>
+                                        <div style="font-size:12px;font-weight:600;color:var(--ink)">Sunita Devi</div>
+                                        <div style="font-size:10px;color:var(--muted)">Token #10</div>
+                                    </div>
+                                </div>
+                                <span style="font-size:10px;color:var(--g600);font-weight:600">~18 min</span>
+                            </div>
+                            <div class="phone-patient">
+                                <div style="display:flex;align-items:center;gap:10px">
+                                    <div class="phone-avatar" style="background:#E8F0FE">RK</div>
+                                    <div>
+                                        <div style="font-size:12px;font-weight:600;color:var(--ink)">Ravi Kumar</div>
+                                        <div style="font-size:10px;color:var(--muted)">Token #11</div>
+                                    </div>
+                                </div>
+                                <span style="font-size:10px;color:var(--g600);font-weight:600">~26 min</span>
+                            </div>
+                        </div>
+                        <div class="phone-bottomnav">
+                            <div style="text-align:center">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--g800)" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M22 21v-2a4 4 0 00-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 010 7.75"/>
+                                </svg>
+                                <div style="font-size:9px;color:var(--g800);font-weight:700;margin-top:3px">Queue</div>
+                            </div>
+                            <div style="text-align:center">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                <div style="font-size:9px;color:var(--muted);font-weight:500;margin-top:3px">Patients</div>
+                            </div>
+                            <div style="text-align:center">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2">
+                                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                                    <path d="M2 10h20"/>
+                                </svg>
+                                <div style="font-size:9px;color:var(--muted);font-weight:500;margin-top:3px">Bills</div>
+                            </div>
+                            <div style="text-align:center">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"/>
+                                    <circle cx="19" cy="12" r="1"/>
+                                    <circle cx="5" cy="12" r="1"/>
+                                </svg>
+                                <div style="font-size:9px;color:var(--muted);font-weight:500;margin-top:3px">More</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-badge float-sms">
+                        <div class="float-badge-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g700)" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="float-badge-title">SMS Sent</div>
+                            <div class="float-badge-sub">Token #8 &#8212; "Your turn in ~2 min"</div>
+                        </div>
+                    </div>
+                    <div class="float-badge float-offline">
+                        <div class="float-badge-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g700)" stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="float-badge-title">Works Offline</div>
+                            <div class="float-badge-sub">Zero data loss guaranteed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-fade"></div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             STATS BAR
+        ════════════════════════════════════════════ -->
+        <section class="stats">
+            <div class="stats-inner">
+                <div class="stat-item reveal">
+                    <div class="stat-val">&lt;10s</div>
+                    <div class="stat-label">Average patient registration time</div>
+                </div>
+                <div class="stat-item reveal reveal-d1">
+                    <div class="stat-val">2+ hrs</div>
+                    <div class="stat-label">Saved daily on admin work</div>
+                </div>
+                <div class="stat-item reveal reveal-d2">
+                    <div class="stat-val">100%</div>
+                    <div class="stat-label">Offline functionality &#8212; zero data loss</div>
+                </div>
+                <div class="stat-item reveal reveal-d3">
+                    <div class="stat-val">25-80</div>
+                    <div class="stat-label">Patients managed per doctor, daily</div>
+                </div>
+                <div class="stat-item reveal reveal-d4">
+                    <div class="stat-val">99%+</div>
+                    <div class="stat-label">SMS delivery success rate</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             CHALLENGE
+        ════════════════════════════════════════════ -->
+        <section class="challenge">
+            <div class="challenge-inner">
+                <div class="reveal">
+                    <div class="challenge-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=80" alt="Clinical tools on desk" loading="lazy">
+                        <div class="challenge-float">
+                            <div style="font-size:12px;font-weight:600;color:var(--g800);margin-bottom:4px">Manual process cost</div>
+                            <div style="font-family:var(--font-display);font-size:24px;font-weight:600;color:var(--ink)">~2 hrs/day</div>
+                            <div style="font-size:11px;color:var(--muted)">lost to administrative work</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="section-tag reveal">The Challenge</div>
+                    <h2 class="section-heading reveal reveal-d1">Great doctors shouldn't be held back by outdated systems</h2>
+                    <p class="section-text reveal reveal-d2">Most clinics across India still rely on handwritten registers for patient tracking, manual billing, and have no way to communicate wait times to patients. Doctors have zero visibility into their own practice metrics &#8212; patient volume, revenue, or peak hours.</p>
+                    <div class="reveal reveal-d3">
+                        <div class="pain-point">
+                            <div class="pain-icon">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--g800)" stroke-width="3" stroke-linecap="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"/>
+                                    <line x1="6" y1="6" x2="18" y2="18"/>
+                                </svg>
+                            </div>
+                            <p>Patients wait 30 minutes to 2+ hours with no queue visibility</p>
+                        </div>
+                        <div class="pain-point">
+                            <div class="pain-icon">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--g800)" stroke-width="3" stroke-linecap="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"/>
+                                    <line x1="6" y1="6" x2="18" y2="18"/>
+                                </svg>
+                            </div>
+                            <p>Returning patient history is lost or impossible to retrieve</p>
+                        </div>
+                        <div class="pain-point">
+                            <div class="pain-icon">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--g800)" stroke-width="3" stroke-linecap="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"/>
+                                    <line x1="6" y1="6" x2="18" y2="18"/>
+                                </svg>
+                            </div>
+                            <p>No operational data &#8212; clinics make decisions blind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             FEATURES
+        ════════════════════════════════════════════ -->
+        <section class="features" id="features">
+            <div class="features-inner">
+                <div class="features-header">
+                    <div class="section-tag reveal">Capabilities</div>
+                    <h2 class="section-heading reveal reveal-d1" style="max-width:600px;margin:0 auto">Built for the reality of Indian healthcare</h2>
+                </div>
+
+                <!-- Feature 1: Queue Management -->
+                <div class="feature-block reveal">
+                    <div class="feature-phone">
+                        <div class="feature-phone-frame">
+                            <div class="feature-phone-notch"></div>
+                            <img src="images/add-patient.png" alt="ClinicOS Patient Registration" loading="lazy">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-tag">Queue Management</div>
+                        <h3 class="section-heading" style="font-size:clamp(22px,2.8vw,32px)">Register patients in seconds, not minutes</h3>
+                        <p class="section-text" style="font-size:15px">Patient details are optional &#8212; even a name is enough to get started. Returning patients auto-fill instantly. The assistant replaces the paper register on day one &#8212; faster, searchable, and permanent. Tokens, queue position, and wait times update in real time.</p>
+                        <div class="feature-highlights">
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Under 10-second registration</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Automatic token assignment</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Step-out and call-now controls</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Full offline capability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Patient Communication -->
+                <div class="feature-block reversed reveal">
+                    <div class="feature-phone">
+                        <div class="feature-phone-frame">
+                            <div class="feature-phone-notch"></div>
+                            <img src="images/patient-status.png" alt="ClinicOS Live Queue" loading="lazy">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-tag">Patient Communication</div>
+                        <h3 class="section-heading" style="font-size:clamp(22px,2.8vw,32px)">Patients know their turn &#8212; before they need to ask</h3>
+                        <p class="section-text" style="font-size:15px">Automated SMS notifications keep patients informed of their queue position and estimated wait time. They can wait at home or nearby instead of sitting in a crowded room. DLT-compliant and reliable even in low-connectivity zones.</p>
+                        <div class="feature-highlights">
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Automated turn-approaching alerts</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>99%+ SMS delivery rate</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Customizable templates</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Customizable per clinic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Records & Billing -->
+                <div class="feature-block reveal">
+                    <div class="feature-phone">
+                        <div class="feature-phone-frame">
+                            <div class="feature-phone-notch"></div>
+                            <img src="images/visit-details.png" alt="ClinicOS Visit Details" loading="lazy">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-tag">Digital Records &amp; Billing</div>
+                        <h3 class="section-heading" style="font-size:clamp(22px,2.8vw,32px)">Every visit, every prescription, every bill &#8212; searchable forever</h3>
+                        <p class="section-text" style="font-size:15px">Thread-based patient records link every consultation, diagnosis, and payment to a single phone number. Generate professional digital bills in one tap. Track daily collections, pending dues, and revenue trends without a spreadsheet.</p>
+                        <div class="feature-highlights">
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Complete patient history on screen</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>One-tap bill generation</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Revenue and collection tracking</span>
+                            </div>
+                            <div class="feature-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--g600)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>CSV export for all data</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             HOW IT WORKS
+        ════════════════════════════════════════════ -->
+        <section class="process" id="process">
+            <div style="max-width:1100px;margin:0 auto">
+                <div class="process-header">
+                    <div class="section-tag reveal">How it works</div>
+                    <h2 class="section-heading reveal reveal-d1">Walk-in to walk-out, reimagined</h2>
+                </div>
+
+                <!-- Step 01 -->
+                <div class="step-grid reveal" style="grid-template-columns:1fr 1fr;display:grid;gap:64px;align-items:center;margin-bottom:72px">
+                    <div style="position:relative">
+                        <div style="border-radius:14px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.07)">
+                            <img src="images/patient-walkin.jpg" alt="Patient walks in" loading="lazy" style="width:100%;display:block">
+                        </div>
+                        <div style="position:absolute;top:-12px;right:-12px;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--g900),var(--g700));display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:700;font-family:var(--font-mono);box-shadow:0 4px 12px rgba(10,61,42,.25)">01</div>
+                    </div>
+                    <div>
+                        <p style="font-family:var(--font-mono);font-size:11px;font-weight:600;color:var(--g600);letter-spacing:.1em;margin-bottom:12px;text-transform:uppercase">Step 01</p>
+                        <h4 class="process-title">Patient walks in</h4>
+                        <p class="process-desc">Assistant enters a name or phone number. Returning patients auto-fill &#8212; name, history, everything. New patients are registered in under 10 seconds. A token is assigned instantly.</p>
+                    </div>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="step-grid reveal" style="grid-template-columns:1fr 1fr;display:grid;gap:64px;align-items:center;margin-bottom:72px;direction:rtl">
+                    <div style="direction:ltr;position:relative">
+                        <div style="border-radius:14px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.07)">
+                            <img src="images/queue-runs-itself.png" alt="Queue runs itself" loading="lazy" style="width:100%;display:block">
+                        </div>
+                        <div style="position:absolute;top:-12px;left:-12px;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--g900),var(--g700));display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:700;font-family:var(--font-mono);box-shadow:0 4px 12px rgba(10,61,42,.25)">02</div>
+                    </div>
+                    <div style="direction:ltr">
+                        <p style="font-family:var(--font-mono);font-size:11px;font-weight:600;color:var(--g600);letter-spacing:.1em;margin-bottom:12px;text-transform:uppercase">Step 02</p>
+                        <h4 class="process-title">Queue runs itself</h4>
+                        <p class="process-desc">The live queue updates automatically. Patients receive SMS alerts as their turn approaches. Step-outs, priority changes, and pauses are handled with a single tap.</p>
+                    </div>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="step-grid reveal" style="grid-template-columns:1fr 1fr;display:grid;gap:64px;align-items:center;margin-bottom:72px">
+                    <div style="position:relative">
+                        <div style="border-radius:14px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.07)">
+                            <img src="images/consultation.png" alt="Doctor consults" loading="lazy" style="width:100%;display:block">
+                        </div>
+                        <div style="position:absolute;top:-12px;right:-12px;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--g900),var(--g700));display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:700;font-family:var(--font-mono);box-shadow:0 4px 12px rgba(10,61,42,.25)">03</div>
+                    </div>
+                    <div>
+                        <p style="font-family:var(--font-mono);font-size:11px;font-weight:600;color:var(--g600);letter-spacing:.1em;margin-bottom:12px;text-transform:uppercase">Step 03</p>
+                        <h4 class="process-title">Doctor consults with full context</h4>
+                        <p class="process-desc">Complete patient thread on screen &#8212; past visits, diagnoses, prescriptions. The doctor focuses on care, not paperwork. Bill is generated in one tap at the end.</p>
+                    </div>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="step-grid reveal" style="grid-template-columns:1fr 1fr;display:grid;gap:64px;align-items:center;direction:rtl">
+                    <div style="direction:ltr;position:relative">
+                        <div style="border-radius:14px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.07)">
+                            <img src="images/data-analytics.jpg" alt="Data drives growth" loading="lazy" style="width:100%;aspect-ratio:3/2;object-fit:cover;display:block">
+                        </div>
+                        <div style="position:absolute;top:-12px;left:-12px;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--g900),var(--g700));display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:700;font-family:var(--font-mono);box-shadow:0 4px 12px rgba(10,61,42,.25)">04</div>
+                    </div>
+                    <div style="direction:ltr">
+                        <p style="font-family:var(--font-mono);font-size:11px;font-weight:600;color:var(--g600);letter-spacing:.1em;margin-bottom:12px;text-transform:uppercase">Step 04</p>
+                        <h4 class="process-title">Data that drives growth</h4>
+                        <p class="process-desc">Every consultation feeds into analytics &#8212; patient volume, revenue trends, peak hours, consultation times. For the first time, the clinic can make decisions backed by real data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             TESTIMONIALS
+        ════════════════════════════════════════════ -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials-inner">
+                <div class="testimonials-header">
+                    <div class="section-tag reveal">From our pilot clinics</div>
+                    <h2 class="section-heading reveal reveal-d1">Doctors talk about what changed</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testi-card reveal">
+                        <svg width="28" height="20" viewBox="0 0 28 20" fill="var(--g200)" style="margin-bottom:20px;flex-shrink:0">
+                            <path d="M0 20V11.2C0 4.48 3.36 1.12 10.08.16l.96 2.4C7.68 3.52 6 5.92 5.76 9.6H10v10.4H0zm16 0V11.2c0-6.72 3.36-10.08 10.08-11.04l.96 2.4c-3.36.96-5.04 3.36-5.28 7.04H26V20H16z"/>
+                        </svg>
+                        <p class="testi-quote">My assistant picked it up in a single sitting. Registration is now faster than writing in the register. For the first time, I have searchable records for every patient I've ever treated.</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">RK</div>
+                            <div>
+                                <div class="testi-name">Dr. Rajesh Kumar</div>
+                                <div class="testi-role">General Physician &#8212; Hyderabad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card reveal reveal-d1">
+                        <svg width="28" height="20" viewBox="0 0 28 20" fill="var(--g200)" style="margin-bottom:20px;flex-shrink:0">
+                            <path d="M0 20V11.2C0 4.48 3.36 1.12 10.08.16l.96 2.4C7.68 3.52 6 5.92 5.76 9.6H10v10.4H0zm16 0V11.2c0-6.72 3.36-10.08 10.08-11.04l.96 2.4c-3.36.96-5.04 3.36-5.28 7.04H26V20H16z"/>
+                        </svg>
+                        <p class="testi-quote">The offline mode is what convinced me. We get power cuts almost every day. The app kept working through every single one. That kind of reliability is non-negotiable for a clinic like mine.</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">AS</div>
+                            <div>
+                                <div class="testi-name">Dr. Anita Sharma</div>
+                                <div class="testi-role">Pediatrician &#8212; Bangalore</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card reveal reveal-d2">
+                        <svg width="28" height="20" viewBox="0 0 28 20" fill="var(--g200)" style="margin-bottom:20px;flex-shrink:0">
+                            <path d="M0 20V11.2C0 4.48 3.36 1.12 10.08.16l.96 2.4C7.68 3.52 6 5.92 5.76 9.6H10v10.4H0zm16 0V11.2c0-6.72 3.36-10.08 10.08-11.04l.96 2.4c-3.36.96-5.04 3.36-5.28 7.04H26V20H16z"/>
+                        </svg>
+                        <p class="testi-quote">Patients used to crowd the entrance asking when their turn was. Now they get an SMS and come exactly when needed. The waiting room is calmer, my staff is less stressed, and consultations start on time.</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">VM</div>
+                            <div>
+                                <div class="testi-name">Dr. Vikash Mishra</div>
+                                <div class="testi-role">Dentist &#8212; Hyderabad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             DEMO / CONTACT
+        ════════════════════════════════════════════ -->
+        <section class="demo" id="demo">
+            <div class="demo-texture"></div>
+            <div class="demo-inner">
+                <div class="demo-header">
+                    <div class="section-tag reveal" style="color:var(--g300)">Get Started</div>
+                    <h2 class="section-heading reveal reveal-d1" style="color:#fff">See ClinicOS in action</h2>
+                    <p class="demo-sub reveal reveal-d2">15-minute walkthrough tailored to your clinic. No obligations, no setup required.</p>
+                </div>
+                <div class="reveal reveal-d2">
+                    <div class="demo-form-wrap" id="demo-form">
+                        <form id="demo-form-el" onsubmit="submitDemo(event)">
+                            <input type="hidden" name="access_key" value="b4061624-935f-46f3-a8a6-a0881f4b8fff">
+                            <input type="hidden" name="subject" value="New Demo Request - ClinicOS">
+                            <div class="demo-grid">
+                                <div>
+                                    <label class="demo-label">Full name *</label>
+                                    <input class="demo-input" id="f-name" name="name" required placeholder="Dr. Rajesh Kumar">
+                                </div>
+                                <div>
+                                    <label class="demo-label">Clinic name</label>
+                                    <input class="demo-input" id="f-clinic" name="clinic" placeholder="Kumar Clinic">
+                                </div>
+                                <div>
+                                    <label class="demo-label">Phone number *</label>
+                                    <input class="demo-input" id="f-phone" name="phone" type="tel" required placeholder="+91 98765 43210">
+                                </div>
+                                <div>
+                                    <label class="demo-label">City</label>
+                                    <input class="demo-input" id="f-city" name="city" placeholder="Hyderabad">
+                                </div>
+                            </div>
+                            <button type="submit" class="demo-submit">Request a Demo</button>
+                        </form>
+                        <p class="demo-note">We'll reach out within 24 hours to schedule a time that works for you.</p>
+                        <div style="margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);text-align:center">
+                            <p style="font-size:13px;color:rgba(255,255,255,.35);margin-bottom:16px">Or reach us directly</p>
+                            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+                                <a href="https://cal.com/harsh-kumar-ck7ifg/30min" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px 20px;color:#fff;font-size:14px;font-weight:600;transition:all .25s;backdrop-filter:blur(8px)">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+                                        <rect x="3" y="4" width="18" height="18" rx="2"/>
+                                        <path d="M16 2v4M8 2v4M3 10h18"/>
+                                    </svg>
+                                    Book a Call
+                                </a>
+                                <a href="https://wa.me/917330937354?text=Hi%2C%20I%27m%20interested%20in%20ClinicOS.%20Can%20we%20talk%3F" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;border:1px solid #25D366;border-radius:8px;padding:12px 20px;color:#fff;font-size:14px;font-weight:600;transition:all .25s">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                    </svg>
+                                    WhatsApp Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-success" id="demo-success">
+                        <div class="demo-success-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <h3 style="font-family:var(--font-display);font-size:26px;font-weight:600;color:#fff;margin:0 0 10px" id="success-name">Thank you</h3>
+                        <p style="font-size:15px;color:rgba(255,255,255,.55);line-height:1.7;max-width:400px;margin:0 auto">Our team will call you within 24 hours to schedule your personalized demo. We look forward to showing you what ClinicOS can do for your practice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════
+             FOOTER
+        ════════════════════════════════════════════ -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div>
+                        <div class="footer-logo">
+                            <svg viewBox="180 275 860 445" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="fc1"><rect x="0" y="0" width="417" height="796"/></clipPath>
+                                    <clipPath id="fs1"><path d="M254.636719 370.625L418.8125 370.625L418.8125 618.011719L254.636719 618.011719Z"/></clipPath>
+                                    <clipPath id="fs2"><path d="M410.015625 401.5625L940 401.5625L940 649.695312L410.015625 649.695312Z"/></clipPath>
+                                    <clipPath id="fs3"><path d="M744.3125 401.5625L1042 401.5625L1042 649.695312L744.3125 649.695312Z"/></clipPath>
+                                    <clipPath id="fcl"><rect x="0" y="0" width="366" height="280"/></clipPath>
+                                </defs>
+                                <g transform="translate(143,97)">
+                                    <g clip-path="url(#fc1)">
+                                        <g transform="translate(5.002645,612.081434)">
+                                            <path class="flogo-c" d="M231.6875 6.015625C194.988281 6.015625 162.300781-2.394531 133.625-19.21875 104.945312-36.039062 82.484375-60.648438 66.234375-93.046875 49.984375-125.453125 41.859375-164.304688 41.859375-209.609375 41.859375-254.921875 49.984375-293.773438 66.234375-326.171875 82.484375-358.578125 104.945312-383.191406 133.625-400.015625 162.300781-416.835938 194.988281-425.25 231.6875-425.25 270.882812-425.25 303.476562-417.84375 329.46875-403.03125 355.46875-388.21875 374.207031-365.898438 385.6875-336.078125L354.140625-315.140625 346.96875-315.140625C335.5-339.035156 320.585938-356 302.234375-366.03125 283.878906-376.070312 260.363281-381.09375 231.6875-381.09375 205.3125-381.09375 181.894531-375.210938 161.4375-363.453125 140.988281-351.703125 124.738281-333.066406 112.6875-307.546875 100.644531-282.023438 94.625-249.378906 94.625-209.609375 94.625-169.847656 100.644531-137.253906 112.6875-111.828125 124.738281-86.398438 140.988281-67.804688 161.4375-56.046875 181.894531-44.296875 205.3125-38.421875 231.6875-38.421875 262.082031-38.421875 286.9375-45.253906 306.25-58.921875 325.5625-72.597656 339.898438-94.726562 349.265625-125.3125L356.4375-125.3125 389.40625-108.96875C379.46875-71.875 361.066406-43.4375 334.203125-23.65625 307.347656-3.875 273.175781 6.015625 231.6875 6.015625Z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#fs1)">
+                                    <path class="flogo-pulse" fill-rule="evenodd" d="M418.4375 536.203125L394.96875 370.9375 368.074219 552.828125 344.117188 434.5 327.492188 529.847656 323.089844 510.777344 279.085938 510.777344C278.597656 509.308594 277.617188 507.84375 276.152344 506.375 273.707031 503.933594 270.285156 502.464844 266.863281 502.464844 263.4375 502.464844 260.015625 503.933594 257.570312 506.375 256.105469 508.332031 254.636719 511.753906 254.636719 515.175781 254.636719 518.601562 256.105469 522.023438 258.550781 524.46875 260.996094 526.914062 264.417969 528.378906 267.839844 528.378906 271.261719 528.378906 274.683594 526.914062 277.128906 524.46875 278.597656 523 279.574219 521.535156 280.0625 519.578125L316.246094 519.578125 328.960938 564.074219 344.117188 486.328125 367.585938 618.347656 394.96875 447.703125 409.148438 544.515625 929.882812 544.515625C936.730469 544.027344 935.75 536.691406 930.371094 536.203125ZM271.75 511.265625C270.773438 510.289062 269.308594 509.308594 267.351562 509.308594 265.882812 509.308594 264.417969 509.800781 263.4375 511.265625 262.460938 512.242188 261.484375 513.710938 261.484375 515.667969 261.484375 517.132812 261.972656 518.601562 263.4375 520.066406 264.417969 521.046875 265.882812 521.535156 267.351562 521.535156 268.816406 521.535156 270.773438 521.046875 271.75 520.066406 272.730469 519.089844 273.707031 517.621094 273.707031 515.667969 273.707031 513.710938 272.730469 512.242188 271.75 511.265625Z"/>
+                                </g>
+                                <g clip-path="url(#fs2)">
+                                    <path class="flogo-pulse" fill-rule="evenodd" d="M422.90625 567.136719L399.4375 401.871094 372.542969 583.761719 348.585938 465.433594 331.960938 560.78125 327.558594 541.710938 283.554688 541.710938C283.066406 540.246094 282.085938 538.777344 280.621094 537.3125 278.175781 534.867188 274.753906 533.398438 271.332031 533.398438 267.90625 533.398438 264.484375 534.867188 262.039062 537.3125 260.574219 539.265625 259.105469 542.691406 259.105469 546.113281 259.105469 549.535156 260.574219 552.957031 263.019531 555.402344 265.464844 557.847656 268.886719 559.3125 272.308594 559.3125 275.730469 559.3125 279.152344 557.847656 281.597656 555.402344 283.066406 553.9375 284.042969 552.46875 284.53125 550.511719L320.714844 550.511719 333.425781 595.007812 348.585938 517.265625 372.054688 649.28125 399.4375 478.636719 413.617188 575.449219 934.351562 575.449219C941.199219 574.960938 940.21875 567.625 934.839844 567.136719ZM276.21875 542.199219C275.242188 541.222656 273.773438 540.246094 271.820312 540.246094 270.351562 540.246094 268.886719 540.734375 267.90625 542.199219 266.929688 543.179688 265.953125 544.644531 265.953125 546.601562 265.953125 548.066406 266.441406 549.535156 267.90625 551.003906 268.886719 551.980469 270.351562 552.46875 271.820312 552.46875 273.285156 552.46875 275.242188 551.980469 276.21875 551.003906 277.199219 550.023438 278.175781 548.558594 278.175781 546.601562 278.175781 544.644531 277.199219 543.179688 276.21875 542.199219Z"/>
+                                </g>
+                                <g clip-path="url(#fs3)">
+                                    <path class="flogo-pulse" fill-rule="evenodd" d="M525.421875 567.136719L501.953125 401.871094 475.0625 583.761719 451.101562 465.433594 434.476562 560.78125 430.078125 541.710938 386.070312 541.710938C385.582031 540.246094 384.605469 538.777344 383.136719 537.3125 380.691406 534.867188 377.269531 533.398438 373.847656 533.398438 370.425781 533.398438 367.003906 534.867188 364.558594 537.3125 363.089844 539.265625 361.625 542.691406 361.625 546.113281 361.625 549.535156 363.089844 552.957031 365.535156 555.402344 367.980469 557.847656 371.402344 559.3125 374.824219 559.3125 378.25 559.3125 381.671875 557.847656 384.117188 555.402344 385.582031 553.9375 386.558594 552.46875 387.050781 550.511719L423.230469 550.511719 435.945312 595.007812 451.101562 517.265625 474.570312 649.28125 501.953125 478.636719 516.132812 575.449219 1036.871094 575.449219C1043.714844 574.960938 1042.738281 567.625 1037.359375 567.136719ZM378.738281 542.199219C377.757812 541.222656 376.292969 540.246094 374.335938 540.246094 372.871094 540.246094 371.402344 540.734375 370.425781 542.199219 369.445312 543.179688 368.46875 544.644531 368.46875 546.601562 368.46875 548.066406 368.957031 549.535156 370.425781 551.003906 371.402344 551.980469 372.871094 552.46875 374.335938 552.46875 375.804688 552.46875 377.757812 551.980469 378.738281 551.003906 379.714844 550.023438 380.691406 548.558594 380.691406 546.601562 380.691406 544.644531 379.714844 543.179688 378.738281 542.199219Z"/>
+                                </g>
+                                <g transform="translate(485,358)">
+                                    <g clip-path="url(#fcl)">
+                                        <g transform="translate(2.516963,201.534611)"><path class="flogo-linic" d="M39.03125 2.140625C32.519531 2.140625 27.34375 0.804688 23.5-1.859375 19.664062-4.523438 16.90625-8.296875 15.21875-13.171875 13.53125-18.046875 12.6875-23.738281 12.6875-30.25L12.6875-136.59375 41.375-136.59375 41.375-29.078125C41.375-25.953125 41.925781-23.835938 43.03125-22.734375 44.132812-21.628906 45.335938-21.078125 46.640625-21.078125 47.160156-21.078125 47.644531-21.109375 48.09375-21.171875 48.550781-21.234375 49.171875-21.332031 49.953125-21.46875L53.46875-0.1875C51.90625 0.457031 49.921875 1.003906 47.515625 1.453125 45.109375 1.910156 42.28125 2.140625 39.03125 2.140625Z"/></g>
+                                        <g transform="translate(57.545823,201.534611)"><path class="flogo-linic" d="M12.6875 0L12.6875-96.796875 41.375-96.796875 41.375 0ZM26.921875-111.03125C22.109375-111.03125 18.203125-112.394531 15.203125-115.125 12.210938-117.863281 10.71875-121.507812 10.71875-126.0625 10.71875-130.613281 12.210938-134.253906 15.203125-136.984375 18.203125-139.722656 22.109375-141.09375 26.921875-141.09375 31.734375-141.09375 35.632812-139.722656 38.625-136.984375 41.625-134.253906 43.125-130.613281 43.125-126.0625 43.125-121.507812 41.625-117.863281 38.625-115.125 35.632812-112.394531 31.734375-111.03125 26.921875-111.03125Z"/></g>
+                                        <g transform="translate(110.623307,201.534611)"><path class="flogo-linic" d="M12.6875 0L12.6875-96.796875 36.09375-96.796875 38.046875-84.5 38.828125-84.5C42.859375-88.53125 47.410156-91.972656 52.484375-94.828125 57.566406-97.691406 63.359375-99.125 69.859375-99.125 80.523438-99.125 88.195312-95.644531 92.875-88.6875 97.5625-81.726562 99.90625-72.203125 99.90625-60.109375L99.90625 0 71.21875 0 71.21875-56.390625C71.21875-63.421875 70.273438-68.234375 68.390625-70.828125 66.503906-73.429688 63.484375-74.734375 59.328125-74.734375 55.679688-74.734375 52.554688-73.921875 49.953125-72.296875 47.347656-70.671875 44.488281-68.363281 41.375-65.375L41.375 0Z"/></g>
+                                        <g transform="translate(221.461638,201.534611)"><path class="flogo-linic" d="M12.6875 0L12.6875-96.796875 41.375-96.796875 41.375 0ZM26.921875-111.03125C22.109375-111.03125 18.203125-112.394531 15.203125-115.125 12.210938-117.863281 10.71875-121.507812 10.71875-126.0625 10.71875-130.613281 12.210938-134.253906 15.203125-136.984375 18.203125-139.722656 22.109375-141.09375 26.921875-141.09375 31.734375-141.09375 35.632812-139.722656 38.625-136.984375 41.625-134.253906 43.125-130.613281 43.125-126.0625 43.125-121.507812 41.625-117.863281 38.625-115.125 35.632812-112.394531 31.734375-111.03125 26.921875-111.03125Z"/></g>
+                                        <g transform="translate(274.539122,201.534611)"><path class="flogo-linic" d="M55.421875 2.34375C46.316406 2.34375 38.085938 0.328125 30.734375-3.703125 23.378906-7.734375 17.585938-13.519531 13.359375-21.0625 9.140625-28.613281 7.03125-37.722656 7.03125-48.390625 7.03125-59.054688 9.367188-68.160156 14.046875-75.703125 18.734375-83.253906 24.914062-89.046875 32.59375-93.078125 40.269531-97.109375 48.53125-99.125 57.375-99.125 63.351562-99.125 68.71875-98.179688 73.46875-96.296875 78.21875-94.410156 82.285156-91.90625 85.671875-88.78125L72.203125-71.03125C70.515625-72.457031 68.59375-73.625 66.4375-74.53125 64.289062-75.445312 61.851562-75.90625 59.125-75.90625 54.570312-75.90625 50.601562-74.800781 47.21875-72.59375 43.84375-70.382812 41.175781-67.195312 39.21875-63.03125 37.269531-58.863281 36.296875-53.984375 36.296875-48.390625 36.296875-42.796875 37.269531-37.914062 39.21875-33.75 41.175781-29.59375 43.8125-26.40625 47.125-24.1875 50.445312-21.976562 54.1875-20.875 58.34375-20.875 61.59375-20.875 64.648438-21.457031 67.515625-22.625 70.378906-23.800781 73.046875-25.300781 75.515625-27.125L86.84375-9.5625C82.800781-5.914062 78.046875-3.019531 72.578125-0.875 67.117188 1.269531 61.398438 2.34375 55.421875 2.34375Z"/></g>
+                                    </g>
+                                </g>
+                                <g transform="translate(839.21747,561.148295)">
+                                    <path class="flogo-os" d="M58.546875 1.546875C48.703125 1.546875 40.019531-0.457031 32.5-4.46875 24.988281-8.488281 19.101562-14.625 14.84375-22.875 10.582031-31.132812 8.453125-41.410156 8.453125-53.703125 8.453125-65.992188 10.582031-76.265625 14.84375-84.515625 19.101562-92.765625 24.988281-98.898438 32.5-102.921875 40.019531-106.941406 48.703125-108.953125 58.546875-108.953125 68.390625-108.953125 77.054688-106.953125 84.546875-102.953125 92.046875-98.960938 97.910156-92.828125 102.140625-84.546875 106.378906-76.273438 108.5-65.992188 108.5-53.703125 108.5-41.410156 106.378906-31.125 102.140625-22.84375 97.910156-14.570312 92.046875-8.4375 84.546875-4.4375 77.054688-0.445312 68.390625 1.546875 58.546875 1.546875ZM58.546875-16.890625C67.660156-16.890625 74.613281-19.816406 79.40625-25.671875 84.207031-31.523438 86.609375-40.867188 86.609375-53.703125 86.609375-66.535156 84.207031-75.890625 79.40625-81.765625 74.613281-87.640625 67.660156-90.578125 58.546875-90.578125 49.390625-90.578125 42.398438-87.640625 37.578125-81.765625 32.753906-75.890625 30.34375-66.535156 30.34375-53.703125 30.34375-40.867188 32.753906-31.523438 37.578125-25.671875 42.398438-19.816406 49.390625-16.890625 58.546875-16.890625Z"/>
+                                </g>
+                                <g transform="translate(946.609664,561.148295)">
+                                    <path class="flogo-os" d="M47.609375 1.546875C40.160156 1.546875 33.535156 0.628906 27.734375-1.203125 21.929688-3.046875 17.09375-5.457031 13.21875-8.4375 9.351562-11.425781 6.390625-14.710938 4.328125-18.296875L16.015625-32.546875 17.859375-32.546875C21.085938-27.742188 25.1875-23.921875 30.15625-21.078125 35.125-18.242188 40.941406-16.828125 47.609375-16.828125 53.285156-16.828125 57.566406-18.023438 60.453125-20.421875 63.347656-22.816406 64.796875-26.125 64.796875-30.34375 64.796875-32.882812 64.328125-35.007812 63.390625-36.71875 62.460938-38.4375 60.921875-39.90625 58.765625-41.125 56.609375-42.351562 53.695312-43.410156 50.03125-44.296875L36.21875-47.453125C26.570312-49.660156 19.382812-53.320312 14.65625-58.4375 9.925781-63.550781 7.5625-70.203125 7.5625-78.390625 7.5625-84.460938 9.078125-89.800781 12.109375-94.40625 15.148438-99.007812 19.570312-102.582031 25.375-105.125 31.1875-107.675781 38.128906-108.953125 46.203125-108.953125 54.484375-108.953125 61.570312-107.859375 67.46875-105.671875 73.375-103.492188 78.359375-100.15625 82.421875-95.65625L71.921875-81.25 70.078125-81.25C67.046875-84.4375 63.570312-86.820312 59.65625-88.40625 55.738281-90 51.253906-90.796875 46.203125-90.796875 40.378906-90.796875 35.945312-89.765625 32.90625-87.703125 29.875-85.648438 28.359375-82.8125 28.359375-79.1875 28.359375-75.8125 29.421875-73.117188 31.546875-71.109375 33.679688-69.097656 37.367188-67.53125 42.609375-66.40625L56.71875-63.46875C67.144531-61.269531 74.707031-57.535156 79.40625-52.265625 84.113281-47.003906 86.46875-40.132812 86.46875-31.65625 86.46875-24.945312 85.019531-19.109375 82.125-14.140625 79.238281-9.171875 74.878906-5.3125 69.046875-2.5625 63.222656 0.175781 56.078125 1.546875 47.609375 1.546875Z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <p class="footer-desc">The clinic operating system designed for Indian clinics. Offline-first. Zero training. Real results.</p>
+                    </div>
+                    <div class="footer-cols">
+                        <div>
+                            <p class="footer-col-title">Product</p>
+                            <a href="#features" class="footer-link">Features</a>
+                            <a href="#process" class="footer-link">How it works</a>
+                            <a href="#demo" class="footer-link">Request a demo</a>
+                        </div>
+                        <div>
+                            <p class="footer-col-title">Contact</p>
+                            <p class="footer-link" id="contact-email"></p>
+                            <p class="footer-link">Hyderabad, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-copy">&#169; 2026 ClinicOS Technologies. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="https://clinicos.codingrippler.com/privacy-policy.html">Privacy</a>
+                        <a href="https://clinicos.codingrippler.com/terms-of-use.html">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ═══════════════════════════════════════════
+             WHATSAPP FLOAT BUTTON
+        ════════════════════════════════════════════ -->
+        <a href="https://wa.me/91733097354?text=Hi%2C%20I%27m%20interested%20in%20ClinicOS.%20Can%20we%20talk%3F"
+           target="_blank" rel="noopener" id="whatsapp-float"
+           style="position:fixed;bottom:28px;right:28px;z-index:150;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.35),0 2px 6px rgba(0,0,0,.1);transition:all .3s">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+        </a>
+
+        <script src="script.js"></script>
+    </body>
 </html>
