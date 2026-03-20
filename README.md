@@ -10,10 +10,10 @@
 Replace paper registers, manual billing, and crowded waiting rooms with a single app.  
 Built for the way Indian clinics actually work — offline-ready, fast, and zero training needed.
 
-[![Pilot Status](https://img.shields.io/badge/Status-Live%20Pilot-brightgreen?style=flat-square)](https://www.clinicos.care)
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://www.clinicos.care)
-[![Offline](https://img.shields.io/badge/Offline-100%25%20Support-0A3D2A?style=flat-square)](https://www.clinicos.care)
-[![Clinics](https://img.shields.io/badge/Pilot%20Clinics-15%2B-0F6B45?style=flat-square)](https://www.clinicos.care)
+[![Pilot Status](https://img.shields.io/badge/Status-Live%20Pilot-brightgreen?style=flat-square)](https://clinic-os-app-launch.vercel.app/)
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)]([https://www.clinicos.care](https://clinic-os-app-launch.vercel.app/))
+[![Offline](https://img.shields.io/badge/Offline-100%25%20Support-0A3D2A?style=flat-square)]([https://www.clinicos.care](https://clinic-os-app-launch.vercel.app/))
+[![Clinics](https://img.shields.io/badge/Pilot%20Clinics-15%2B-0F6B45?style=flat-square)]([https://www.clinicos.care](https://clinic-os-app-launch.vercel.app/))
 [![Website](https://img.shields.io/badge/Website-clinicos.care-139157?style=flat-square&logo=googlechrome&logoColor=white)](https://clinic-os-app-launch.vercel.app/)
 
 [🌐 Website](https://clinic-os-app-launch.vercel.app/) · [📱 Request a Demo](https://calendar.app.google/Ss9BUourZC9SNMAj7) · [💬 WhatsApp Us](https://wa.me/917330937354)
