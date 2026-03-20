@@ -1,273 +1,329 @@
-﻿# ClinicOS — Smart Clinic Management for Vijayawada
+<div align="center">
 
-> Built by [CodingRippler Tech Pvt Ltd](https://codingrippler.com) · Vijayawada, Andhra Pradesh
+<img src="images/clinicos-icon.png" alt="ClinicOS Logo" width="80" height="80" />
 
----
+# ClinicOS
 
-## 📌 Overview
+### The operating system your clinic never knew it needed.
 
-This is the official marketing landing page for **ClinicOS** — a smart clinic management Android app targeting small clinics, nursing homes, and individual practitioners in Vijayawada, AP.
+Replace paper registers, manual billing, and crowded waiting rooms with a single app.  
+Built for the way Indian clinics actually work — offline-ready, fast, and zero training needed.
 
-**Conversion Goal:** Drive free 30-day pilot sign-ups from 500+ Vijayawada clinic owners.  
-**Target Rate:** 10% form submission rate.  
-**Launch Date:** April 2026.
+[![Pilot Status](https://img.shields.io/badge/Status-Live%20Pilot-brightgreen?style=flat-square)](https://www.clinicos.care)
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://www.clinicos.care)
+[![Offline](https://img.shields.io/badge/Offline-100%25%20Support-0A3D2A?style=flat-square)](https://www.clinicos.care)
+[![Clinics](https://img.shields.io/badge/Pilot%20Clinics-15%2B-0F6B45?style=flat-square)](https://www.clinicos.care)
+[![Website](https://img.shields.io/badge/Website-clinicos.care-139157?style=flat-square&logo=googlechrome&logoColor=white)](https://www.clinicos.care)
 
----
+[🌐 Website](https://www.clinicos.care) · [📱 Request a Demo](https://calendar.app.google/Ss9BUourZC9SNMAj7) · [💬 WhatsApp Us](https://wa.me/917330937354)
 
-## 🎨 Design System
-
-### Colors
-
-| Role | Name | Hex |
-|------|------|-----|
-| Primary | Teal | `#208F9F` |
-| Primary Hover | Teal Dark | `#1a7a8f` |
-| Primary Light | Teal Light | `#e6f5f7` |
-| CTA / Success | Green | `#28A745` |
-| CTA Hover | Green Dark | `#1e8a38` |
-| Header / Footer | Dark | `#1f2121` |
-| Body Text | Text | `#1f2121` |
-| Muted Text | Text Light | `#666666` |
-| Background Alt | Light Gray | `#f5f5f5` |
-| Borders | Border | `#e0e0e0` |
-
-### Typography
-
-| Element | Size | Weight |
-|---------|------|--------|
-| H1 (Hero) | `3rem` | `700` |
-| H2 (Section) | `2.5rem` | `700` |
-| H3 (Card title) | `1.05–1.3rem` | `700` |
-| Body | `1rem` | `400` |
-| Small / Labels | `0.82rem` | `600–700` |
-
-**Font Family:** `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`  
-No external font dependencies — fast load on all devices.
+</div>
 
 ---
 
-## 📐 Page Sections
+## 📋 Table of Contents
 
-| # | Section | Background | Key Component |
-|---|---------|------------|---------------|
-| 1 | Header | White → frosted on scroll | Sticky nav, Join Pilot CTA |
-| 2 | Hero | Teal gradient | Android mockup, floating badges |
-| 3 | About | White | 2-col layout, benefit pills |
-| 4 | Features | Light gray | 8-card grid |
-| 5 | How It Works | White | 4-step flow |
-| 6 | Pricing | Light gray | 3-tier cards, featured Pilot |
-| 7 | Testimonials | Teal gradient | 3 testimonial cards |
-| 8 | CTA | Green gradient | Single CTA button |
-| 9 | Footer | Dark `#1f2121` | 4-column grid |
-
----
-
-## 🪟 Modal — Pilot Registration
-
-Triggered by any **"Join Pilot"** button across the page.
-
-**Form Fields:**
-1. Clinic Name (required)
-2. Doctor / Owner Name (required)
-3. WhatsApp Number — +91 prefix, 10-digit validation (required)
-4. Email Address (optional)
-
-**On Submit:**
-1. Client-side validation runs
-2. 1.2s loading state shown
-3. Success screen revealed
-4. WhatsApp opens automatically with pre-filled message to `+91 7330937354`
-
-**Additional Link:** Full Google Form for detailed registration (9 sections).
+- [Overview](#-overview)
+- [The Problem](#-the-problem)
+- [Key Features](#-key-features)
+- [How It Works](#-how-it-works)
+- [Stats at a Glance](#-stats-at-a-glance)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Deployment](#-deployment)
+- [Testimonials](#-testimonials)
+- [Roadmap](#-roadmap)
+- [Contact](#-contact)
+- [License](#-license)
 
 ---
 
-## ⚙️ JavaScript Features (`script.js`)
+## 🏥 Overview
 
-| Feature | Description |
-|---------|-------------|
-| Sticky header | Adds `.scrolled` class (frosted glass) after 60px scroll |
-| Hamburger menu | Toggle mobile nav with animated icon morph |
-| Scroll fade-up | `IntersectionObserver` reveals elements on scroll |
-| Modal open/close | Triggered by `[data-modal="pilot"]`, closes on overlay/Esc |
-| Form validation | Phone regex `[6-9][0-9]{9}`, required field checks |
-| WhatsApp redirect | Pre-filled message sent on form submit |
-| Toast notifications | Slide-up feedback for form errors |
-| Counter animation | Hero stats count up when scrolled into view |
-| Queue token ticker | "Now Serving" token randomly increments every 8s |
+**ClinicOS** is a smart clinic management platform built specifically for small private clinics, nursing homes, and solo practitioners across India. It digitizes the entire patient journey — from walk-in registration to consultation to billing — in under 10 minutes.
+
+> *"We built ClinicOS because we visited clinics and saw the same problems everywhere. Doctors work too hard to lose time, revenue, and patients to paper registers."*
+
+**Currently piloting in Hyderabad and Bangalore**, with plans to expand statewide and nationally.
 
 ---
 
-## 📲 CTAs & Links
+## 🚨 The Problem
 
-| Button | Action | Location |
-|--------|--------|----------|
-| Join Pilot (header) | Opens modal | Header |
-| Join Free Pilot → | Opens modal | Hero |
-| Watch Demo (52s) | Opens `https://drive.google.com/file/d/1soIMutKVzkzhk43__52L1KtjVqFA5f17/view?usp=drive_link` | Hero |
-| Join Pilot (pricing) | Opens modal | Pricing — Pilot card |
-| Subscribe Now | Opens WhatsApp — Pro inquiry | Pricing — Pro card |
-| Contact Sales | Opens modal | Pricing — Multi card |
-| Join Free Pilot Now → | Opens modal | CTA section |
-| WhatsApp FAB | Opens WhatsApp chat | Fixed, bottom-right |
-| 💬 WhatsApp Us | Opens WhatsApp chat | Footer |
+Most clinics across India still rely on:
+
+| Pain Point | Impact |
+|---|---|
+| 📋 Handwritten patient registers | 4–6 minutes per registration, unreadable, unsearchable |
+| ⏳ No queue visibility for patients | Waiting rooms crowded for 30 min to 2+ hours |
+| 💸 Manual billing | Missed invoices, calculation errors, lost receipts |
+| 🗂️ No patient history system | Returning patients re-registered from scratch |
+| 📊 Zero operational data | Doctors make scheduling and staffing decisions blind |
+
+> **~2 hours per day** are lost to administrative work in a typical Indian clinic.
 
 ---
 
-## 🚀 Deployment
+## ✨ Key Features
 
-### Option 1 — Netlify Drop (Fastest, ~2 minutes)
+### ⚡ Queue Management
+Register patients in seconds, not minutes. Even a name is enough to get started.
 
-1. Go to **[app.netlify.com/drop](https://app.netlify.com/drop)**
-2. Drag the entire `clinicos-landing/` folder onto the page
-3. Get a live URL instantly (e.g. `clinicos-vij.netlify.app`)
-4. Share with clinics 🎉
+- **Under 10-second registration** — enter a phone number, returning patients auto-fill instantly
+- **Automatic token assignment** — no manual numbering, no paper slips
+- **Live queue display** — real-time token status on any connected screen
+- **Step-out & call-now controls** — manage walk-outs and priority changes with one tap
+- **100% offline** — works through power cuts and network outages without losing a single record
 
-### Option 2 — Vercel
+---
 
-```bash
-npm i -g vercel
-cd clinicos-landing
-vercel
+### 📲 Patient Communication
+Patients know their turn before they need to ask.
+
+- **Automated SMS notifications** — turn-approaching alerts sent automatically
+- **99%+ SMS delivery rate** — DLT-compliant and tested in low-connectivity zones
+- **Customizable templates** — edit message content per clinic preference
+- **Patients wait outside** — less crowding, calmer waiting rooms, happier staff
+
+---
+
+### 🗂️ Digital Records & Billing
+Every visit, every prescription, every bill — searchable forever.
+
+- **Thread-based patient records** — every consultation linked to a phone number
+- **One-tap bill generation** — professional digital invoices in seconds
+- **Revenue & collection tracking** — daily totals, pending dues, trend view
+- **CSV export** — full data portability, always
+
+---
+
+### 📊 Analytics Dashboard
+For the first time, clinics can make decisions backed by real data.
+
+- Patient volume by day, week, and month
+- Revenue trends and peak-hour analysis
+- Consultation time averages
+- Staff and operational insights
+
+---
+
+## 🔄 How It Works
+
+```
+Patient Walks In
+      │
+      ▼
+┌─────────────────────────────┐
+│  Step 01 — Register         │
+│  Name or phone number       │
+│  Returning: auto-fill       │
+│  New: under 10 seconds      │
+│  Token assigned instantly   │
+└─────────────┬───────────────┘
+              │
+              ▼
+┌─────────────────────────────┐
+│  Step 02 — Queue Runs Itself│
+│  Live queue auto-updates    │
+│  SMS sent as turn approaches│
+│  Staff controls: 1 tap      │
+└─────────────┬───────────────┘
+              │
+              ▼
+┌─────────────────────────────┐
+│  Step 03 — Consultation     │
+│  Full patient thread visible│
+│  Past visits, prescriptions │
+│  Doctor focuses on care     │
+└─────────────┬───────────────┘
+              │
+              ▼
+┌─────────────────────────────┐
+│  Step 04 — Bill & Data      │
+│  One-tap invoice generated  │
+│  Analytics updated live     │
+│  Every metric captured      │
+└─────────────────────────────┘
 ```
 
-### Option 3 — GitHub Pages
+---
 
-```bash
-# Create a repo named: username.github.io
-git init
-git add .
-git commit -m "ClinicOS landing page"
-git remote add origin https://github.com/username/username.github.io.git
-git push -u origin main
-# Live at: https://username.github.io
+## 📈 Stats at a Glance
+
+| Metric | Value |
+|--------|-------|
+| 🏥 Pilot clinics | 15+ |
+| ⚡ Patient registration | < 10 seconds |
+| 🕐 Admin time saved daily | 2+ hours |
+| 🌐 Offline functionality | 100% |
+| 👨‍⚕️ Patients managed per doctor | 25–80 / day |
+| 📱 SMS delivery success rate | 99%+ |
+| 🎓 Training required | Zero |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Frontend (Website)** | HTML5, CSS3 (custom properties), Vanilla JavaScript |
+| **Fonts** | Playfair Display, Source Sans 3, IBM Plex Mono (Google Fonts) |
+| **Form Handling** | WhatsApp Business API (wa.me redirect) |
+| **Hosting** | Vercel / Custom domain via `clinicos.care` |
+| **Mobile App** | Android (Native) |
+| **Animations** | CSS transitions + IntersectionObserver API |
+| **Analytics** | Custom in-app dashboard |
+
+---
+
+## 📁 Project Structure
+
+```
+clinicos-website/
+├── index.html              # Main landing page
+├── styles.css              # All styles — variables, layout, components, responsive
+├── script.js               # Smooth scroll, nav scroll state, reveal animations,
+│                           # mobile menu, WhatsApp form redirect
+├── privacy-policy.html     # Privacy policy page
+├── terms-of-use.html       # Terms of use page
+└── images/
+    ├── clinicos-icon.png   # App icon / favicon
+    ├── hero-bg.png         # Hero section background
+    ├── add-patient.png     # Feature screenshot — patient registration
+    ├── patient-status.png  # Feature screenshot — live queue
+    ├── visit-details.png   # Feature screenshot — visit & billing
+    ├── patient-walkin.jpg  # How it works — step 01
+    ├── queue-runs-itself.png # How it works — step 02
+    ├── consultation.png    # How it works — step 03
+    └── data-analytics.jpg  # How it works — step 04
 ```
 
-### Option 4 — Local Preview
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Any modern web browser
+- A local static file server (optional, for development)
+
+### Run Locally
 
 ```bash
-# Just open in browser
+# Clone the repository
+git clone https://github.com/CodingRippler/clinicos-website.git
+
+# Navigate into the project
+cd clinicos-website
+
+# Option 1: Open directly in browser
 open index.html
 
-# Or use a local server
+# Option 2: Serve locally with Python
+python3 -m http.server 8000
+# Then open http://localhost:8000
+
+# Option 3: Serve with Node.js (npx)
 npx serve .
-# or
-python3 -m http.server 3000
+# Then open http://localhost:3000
+```
+
+No build steps. No dependencies. No `npm install`. It's plain HTML, CSS, and JavaScript.
+
+---
+
+## ☁️ Deployment
+
+The site is deployed on **Vercel** with a custom domain at [clinicos.care](https://www.clinicos.care).
+
+### Deploy to Vercel
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy from project root
+vercel
+
+# Follow prompts — no build command needed, output directory is ./
+```
+
+### Deploy to Netlify (Drag & Drop)
+
+1. Go to [netlify.com/drop](https://app.netlify.com/drop)
+2. Drag the entire project folder onto the page
+3. Done — live in seconds
+
+### Deploy to GitHub Pages
+
+```bash
+# Push to GitHub, then enable Pages in:
+# Settings → Pages → Source → Deploy from branch → main / root
 ```
 
 ---
 
-## 🌐 Custom Domain Setup
+## 💬 Testimonials
 
-1. Buy a domain: `clinicos.in` or `clinicos.app` (GoDaddy / Namecheap ~₹800/yr)
-2. In Netlify: **Domain Settings → Add custom domain**
-3. Update DNS: Point nameservers to Netlify's servers
-4. SSL is automatic (Let's Encrypt) — no extra setup
-
-**Recommended domains:**
-- `clinicos.in`
-- `clinicos.app`
-- `clinicosapp.com`
+> *"My assistant picked it up in a single sitting. Registration is now faster than writing in the register. For the first time, I have searchable records for every patient I've ever treated."*
+>
+> **Dr. Rajesh Kumar** — General Physician, Hyderabad
 
 ---
 
-## 📞 Contact & WhatsApp Number
-
-The WhatsApp number `917330937354` is used in these locations:
-
-| File | Line | Usage |
-|------|------|-------|
-| `script.js` | Line 2 | `const WA_NUMBER` — modal form submit |
-| `index.html` | Hero secondary btn | Watch Demo link |
-| `index.html` | Pricing — Pro card | Subscribe Now button |
-| `index.html` | Footer — WhatsApp Us | Direct chat link |
-| `index.html` | WhatsApp FAB | Fixed chat button |
-| `index.html` | Modal success screen | Contact link |
-
-To change the number, update `WA_NUMBER` in `script.js` and search-replace `917330937354` in `index.html`.
+> *"The offline mode is what convinced me. We get power cuts almost every day. The app kept working through every single one. That kind of reliability is non-negotiable for a clinic like mine."*
+>
+> **Dr. Anita Sharma** — Pediatrician, Bangalore
 
 ---
 
-## 📱 Mobile Responsiveness
-
-| Breakpoint | Changes |
-|------------|---------|
-| `≤ 1024px` | Pricing grid → single column |
-| `≤ 768px` | Nav collapses to hamburger; hero → 1 column; floating mockup badges hidden |
-| `≤ 480px` | Hero CTAs stack vertically; features → 1 column; footer → 1 column |
-
-Tested range: **320px → 1920px** (all devices).
+> *"Patients used to crowd the entrance asking when their turn was. Now they get an SMS and come exactly when needed. The waiting room is calmer, my staff is less stressed, and consultations start on time."*
+>
+> **Dr. Vikash Mishra** — Dentist, Hyderabad
 
 ---
 
-## ✅ Pre-Launch Checklist
+## 🗺️ Roadmap
 
-- [ ] Replace Google Form placeholder URL in `index.html` and `script.js`
-- [ ] Verify WhatsApp number `917330937354` is correct and active
-- [ ] Test modal form on mobile (Chrome + Safari)
-- [ ] Test hamburger menu on 375px screen
-- [ ] Verify all "Join Pilot" buttons open the modal
-- [ ] Confirm WhatsApp message sends correctly on submit
-- [ ] Update demo video link if URL changes
-- [ ] Add Google Analytics tag in `<head>` (optional)
-- [ ] Generate QR code from live URL for field visits
-- [ ] Test on slow 3G network (important for clinic areas)
-
----
-
-## 📈 Google Analytics Setup (Optional)
-
-Add this inside the `<head>` tag in `index.html`:
-
-```html
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-```
-
-Replace `G-XXXXXXXXXX` with your Measurement ID from [analytics.google.com](https://analytics.google.com).
-
-**Recommended events to track:**
-- Modal open: `gtag('event', 'modal_open', { event_category: 'CTA' })`
-- Form submit: `gtag('event', 'pilot_signup', { event_category: 'Conversion' })`
-- WhatsApp click: `gtag('event', 'whatsapp_click', { event_category: 'Contact' })`
+- [x] Landing page with demo request form
+- [x] WhatsApp-integrated contact flow
+- [x] Mobile-responsive design
+- [x] Scroll reveal animations
+- [ ] Case Studies section (coming soon)
+- [ ] Play Store listing — April 2026
+- [ ] Multilingual support (Telugu, Hindi, Kannada)
+- [ ] ABDM (Ayushman Bharat Digital Mission) integration
+- [ ] Patient-facing self-check-in portal
+- [ ] Multi-branch / nursing home dashboard
 
 ---
 
-## 🗓️ Launch Timeline
-
-| Week | Action |
-|------|--------|
-| Week 1 (Mar 18) | Deploy landing page to Netlify |
-| Week 1 | Launch Google Ads campaign (₹1k budget) |
-| Week 2 | WhatsApp pilot form to 20 Vijayawada clinics |
-| Week 3 | Begin pilot onboarding + clinic visits |
-| Week 4 | Collect feedback, iterate on features |
-| **April 2026** | **Play Store Launch** 🚀 |
-
----
-
-## 📬 Support & Contact
+## 📞 Contact
 
 | Channel | Details |
 |---------|---------|
-| Email | hello@codingrippler.com |
-| WhatsApp | [+91-7330937354](https://wa.me/917330937354) |
-| Live Demo | [lively-crostata-40ac4a.netlify.app](https://lively-crostata-40ac4a.netlify.app/) |
-| Location | Vijayawada, Andhra Pradesh |
+| 🌐 Website | [clinicos.care](https://www.clinicos.care) |
+| 💬 WhatsApp | [+91-8102213997](https://wa.me/917330937354?text=Hi%2C%20I%27m%20interested%20in%20ClinicOS.%20Can%20we%20talk%3F) |
+| 📅 Book a Call | [cal.com/harsh-kumar-ck7ifg/30min](https://calendar.app.google/Ss9BUourZC9SNMAj7) |
+| 📍 Location | Vijayawada, India |
+| 🏢 Company | ClinicOS Technologies |
 
 ---
 
 ## 📄 License
 
-© 2026 **Coding Rippler Tech Private Limited**. All rights reserved.  
-Vijayawada, Andhra Pradesh, India.
+© 2026 ClinicOS Technologies. All rights reserved.
+
+- [Privacy Policy](https://clinicos.codingrippler.com/privacy-policy.html)
+- [Terms of Use](https://clinicos.codingrippler.com/terms-of-use.html)
 
 ---
 
-*ClinicOS — Built in Vijayawada. For Vijayawada. మీ కోసం.* 🏥
+<div align="center">
+
+Built with ❤️ for Indian clinics
+
+**[🌐 Visit clinicos.care](https://www.clinicos.care) · [💬 WhatsApp Us](https://wa.me/917330937354) · [📅 Book a Demo](https://calendar.app.google/Ss9BUourZC9SNMAj7)**
+
+</div>
