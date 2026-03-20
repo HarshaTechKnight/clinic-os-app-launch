@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="images/clinicos-icon.png" alt="ClinicOS Logo" width="80" height="80" />
+<img width="96" height="96" alt="clinicos-icon" src="https://github.com/user-attachments/assets/613d2239-a735-4528-b9b8-ca8bfb636f43" />
+
 
 # ClinicOS
 
@@ -13,9 +14,9 @@ Built for the way Indian clinics actually work — offline-ready, fast, and zero
 [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://www.clinicos.care)
 [![Offline](https://img.shields.io/badge/Offline-100%25%20Support-0A3D2A?style=flat-square)](https://www.clinicos.care)
 [![Clinics](https://img.shields.io/badge/Pilot%20Clinics-15%2B-0F6B45?style=flat-square)](https://www.clinicos.care)
-[![Website](https://img.shields.io/badge/Website-clinicos.care-139157?style=flat-square&logo=googlechrome&logoColor=white)](https://www.clinicos.care)
+[![Website](https://img.shields.io/badge/Website-clinicos.care-139157?style=flat-square&logo=googlechrome&logoColor=white)](https://clinic-os-app-launch.vercel.app/)
 
-[🌐 Website](https://www.clinicos.care) · [📱 Request a Demo](https://calendar.app.google/Ss9BUourZC9SNMAj7) · [💬 WhatsApp Us](https://wa.me/917330937354)
+[🌐 Website](https://clinic-os-app-launch.vercel.app/) · [📱 Request a Demo](https://calendar.app.google/Ss9BUourZC9SNMAj7) · [💬 WhatsApp Us](https://wa.me/917330937354)
 
 </div>
 
@@ -45,7 +46,7 @@ Built for the way Indian clinics actually work — offline-ready, fast, and zero
 
 > *"We built ClinicOS because we visited clinics and saw the same problems everywhere. Doctors work too hard to lose time, revenue, and patients to paper registers."*
 
-**Currently piloting in Hyderabad and Bangalore**, with plans to expand statewide and nationally.
+**Currently piloting in vijayawada**, with plans to expand statewide and nationally.
 
 ---
 
@@ -212,7 +213,7 @@ clinicos-website/
 
 ```bash
 # Clone the repository
-git clone https://github.com/CodingRippler/clinicos-website.git
+git clone https://github.com/HarshaTechKnight/clinic-os-app-launch.git
 
 # Navigate into the project
 cd clinicos-website
@@ -235,7 +236,7 @@ No build steps. No dependencies. No `npm install`. It's plain HTML, CSS, and Jav
 
 ## ☁️ Deployment
 
-The site is deployed on **Vercel** with a custom domain at [clinicos.care](https://www.clinicos.care).
+The site is deployed on **Vercel** with a custom domain at [clinicos.care](https://clinic-os-app-launch.vercel.app/).
 
 ### Deploy to Vercel
 
@@ -303,7 +304,7 @@ vercel
 
 | Channel | Details |
 |---------|---------|
-| 🌐 Website | [clinicos.care](https://www.clinicos.care) |
+| 🌐 Website | [clinicos.care](https://clinic-os-app-launch.vercel.app/) |
 | 💬 WhatsApp | [+91-8102213997](https://wa.me/917330937354?text=Hi%2C%20I%27m%20interested%20in%20ClinicOS.%20Can%20we%20talk%3F) |
 | 📅 Book a Call | [cal.com/harsh-kumar-ck7ifg/30min](https://calendar.app.google/Ss9BUourZC9SNMAj7) |
 | 📍 Location | Vijayawada, India |
@@ -324,6 +325,6 @@ vercel
 
 Built with ❤️ for Indian clinics
 
-**[🌐 Visit clinicos.care](https://www.clinicos.care) · [💬 WhatsApp Us](https://wa.me/917330937354) · [📅 Book a Demo](https://calendar.app.google/Ss9BUourZC9SNMAj7)**
+**[🌐 Visit clinicos.care](https://clinic-os-app-launch.vercel.app/) · [💬 WhatsApp Us](https://wa.me/917330937354) · [📅 Book a Demo](https://calendar.app.google/Ss9BUourZC9SNMAj7)**
 
 </div>
