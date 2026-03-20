@@ -304,9 +304,9 @@ vercel
 
 | Channel | Details |
 |---------|---------|
-| 🌐 Website | [clinicos.care](https://clinic-os-app-launch.vercel.app/) |
-| 💬 WhatsApp | [+91-8102213997](https://wa.me/917330937354?text=Hi%2C%20I%27m%20interested%20in%20ClinicOS.%20Can%20we%20talk%3F) |
-| 📅 Book a Call | [cal.com/harsh-kumar-ck7ifg/30min](https://calendar.app.google/Ss9BUourZC9SNMAj7) |
+| 🌐 Website | [https://clinic-os-app-launch.vercel.app/](https://clinic-os-app-launch.vercel.app/) |
+| 💬 WhatsApp | [+91-7330937354](https://wa.me/917330937354?text=Hi%2C%20I%27m%20interested%20in%20ClinicOS.%20Can%20we%20talk%3F) |
+| 📅 Book a Call | [https://calendar.app.google/Ss9BUourZC9SNMAj7](https://calendar.app.google/Ss9BUourZC9SNMAj7) |
 | 📍 Location | Vijayawada, India |
 | 🏢 Company | ClinicOS Technologies |
 
